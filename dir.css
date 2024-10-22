@@ -1,0 +1,27 @@
+/* styles.css */
+.site-header .row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  .site-header .col-sm-4 {
+    order: 3;
+  }
+  
+  .site-header .col-sm-8 {
+    order: 1;
+  }
+  
+  .site-header .site-header-social {
+    order: 2;
+  }
+  
+  .site-header .site-header-phone {
+    order: 4;
+  }
+  
+  .site-header .site-header-email {
+    order: 5;
+  }
+  

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Sign Up Form</h2>
+<form id="signupForm" onsubmit="return validateForm()">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" required>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="lastName" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+
+  <button type="submit">Sign Up</button>
+</form>
+
+<script>
+  function validateForm() {
+    var firstName = document.getElementById("firstName").value;
+    var lastName = document.getElementById("lastName").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    if (!isValidName(firstName) || !isValidName(lastName) || !isValidEmail(email) || !isValidPassword(password)) {
+      alert("Invalid input. Please check your entries.");
+      return false;
+    }
+
+    // Proceed with form submission
+    alert("Sign-up successful!");
+    return true;
+  }
+
+  function isValidName(name) {
+    return /^[a-zA-Z]+$/.test(name);
+  }
+
+  function isValidEmail(email) {
+    // Basic email validation, you might want to use a more sophisticated regex
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  function isValidPassword(password) {
+    // You can add more password criteria here
+    return password.length >= 8;
+  }
+</script>
+
+</body>
+</html>

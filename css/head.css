@@ -1,0 +1,5 @@
+.bk {
+    background-color: rgba(97, 20, 107, 0.954); /* Semi-transparent white */
+    background-image: url('glassy-texture.jpg'); /* Replace with your own texture image */
+    background-blur: 10px; /* Apply a blur effect to the background image */
+}

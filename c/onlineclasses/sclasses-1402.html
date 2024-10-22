@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fa" ng-app="siteBuilder.public">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>home | Erdos Innovative Institute</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta property="og:title" content="Virtual training">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="http://erdos.ir/">
+	<meta property="og:site_name" content="Erdos Innovative Institute">
+	<meta property="og:image" content=''>
+	<meta name="twitter:url" content="http://erdos.ir/">
+	<meta name="twitter:title" content="Home | Erdos Innovator Institute">
+	<meta name="twitter:description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="canonical" href="http://erdos.ir/"> <meta name="google-site-verification" content="Ob8FdmiR0koTIjVr1O0OsM-XqDTBvrTYMjhEc2Q-kIY" />
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/btstrp.css">
+    <link rel="stylesheet" href="/css/ax.css">
+    <link rel="stylesheet" href="/css/mag.css">
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/head.css">
+	<link rel="stylesheet" href="/css/ques.css">
+	<link rel="stylesheet" href="/css/bootqu.css">
+	<link rel="stylesheet" href="/css/animatesign.css">
+	<link rel="stylesheet" href="/css/appsign.css">
+	<link rel="stylesheet" href="/css/bootsign.css">
+	<link rel="stylesheet" href="/css/btsign.css">
+	<link rel="stylesheet" href="/css/cedasign.css">
+	<link rel="stylesheet" href="/css/pops.css">
+	<link rel="stylesheet" href="/css/owl.carousel.css">
+	<link rel="stylesheet" href="/css/slideshow.css">
+	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="appsign.css">
+</head>
+
+<body ng-class="{'no-scroll':no_scroll}" itemscope="" itemtype="http://schema.org/WebPage">
+
+    <div class="site-header bk">
+		<div class="site-header-contact d-flex justify-content-center align-items-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-6">
+						<div class="d-flex align-items-center">
+							<div class="site-header-user text-white ml-20 d-none d-lg-block">
+								
+								
+									<!-- <ul class="navbar-nav mr-auto d-flex flex-row">
+										<li class="nav-item ml-10">
+											<a href="" class="nav-link">
+												Log in
+											</a>
+										</li>
+										
+											<li class="nav-item ml-10">
+												<a href="signin.html" class="nav-link">
+													Signup
+												</a>
+											</li>
+										
+										
+											<li class="nav-item mr-10 ml-0">
+												<a href="/site/cart" class="nav-link site-header-cart" cart="">
+													<i class="fa fa-shopping-cart site-header-cart-icon mr-half" aria-hidden="true"></i> 
+													<span class="badge badge-blue text-white ng-binding site-header-cart-badge" ng-bind="model.items.length || 0"></span>
+												</a>
+											</li>
+										
+									</ul> -->
+								
+							</div>
+							<!-- Search -->
+							<div class="site-header-search">
+								<form class="quicksearch header-search-form d-flex position-relative" action="/site/search" dynamic-search="" auto-show="">
+									<div class="quicksearch-query d-flex w-100">
+										<input type="text" class="header-search-input quicksearch-query-input" name="q" placeholder="Search..." maxlength="100" ng-model="query" ng-model-options="{debounce:500}" autocomplete="off">
+										<button class="header-search-button quicksearch-query-button" type="submit">
+											<i class="fa fa-search"></i>
+										</button>
+									</div>
+									<div class="quicksearch-items d-none" ng-class="{'d-none': !items.length}">
+										<div class="quicksearch-item" ng-repeat="item in items">
+											<div class="quicksearch-item-image" ng-show="item.image">
+												<a ng-href="{{item.url}}" class="quicksearch-item-image-link">
+													<img ng-src="{{item.image}}?m=crop&w=70&h=70&q=high" class="quicksearch-item-image-element">
+												</a>
+											</div>
+											<h4 class="quicksearch-item-title text-right">
+												<a ng-href="{{item.url}}" class="quicksearch-item-link">
+													<span ng-bind="item.title"></span>
+												</a>
+											</h4>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					
+						<div class="col-sm-8 col-xs-6">
+							<div class="row justify-content-start align-items-center flex-row-reverse h-100">
+								
+								<div class="site-header-contact-item site-header-social d-none d-md-flex order-1">
+									<a class="facebook site-header-social-link" href="https://facebook.com/test">
+										<i class="fa fa-facebook site-header-social-icon"></i>
+									</a>
+									<a class="google-plus site-header-social-link" href="">
+										<i class="fa fa-google-plus site-header-social-icon"></i>
+									</a>
+									<a class="telegram site-header-social-link" href="https://telegram.me/Erdos">
+										<i class="fa fa-send site-header-social-icon"></i>
+									</a>
+									<a class="instagram site-header-social-link" href="https://instagram.com/erdos_math">
+										<i class="fa fa-instagram site-header-social-icon"></i>
+									</a>
+									<a class="linkedin site-header-social-link" href="">
+										<i class="fa fa-linkedin site-header-social-icon"></i>
+									</a>
+								</div>
+
+								<div class="site-header-contact-item site-header-phone d-none d-xs-flex order-2">
+									<i class="fa fa-phone site-header-contact-item-icon"></i>
+									+98 9363069089 -  +98 9010446169 - +98 9030767438 - +98 9029377438
+								</div>
+
+								<div class="site-header-contact-item site-header-email d-none d-lg-flex order-3">
+									<i class="fa fa-envelope site-header-contact-item-icon"></i>
+									info@erdos.ir
+								</div>
+
+							</div>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row justify-content-between align-items-center py-10">
+				<div class="col-auto col-md-4 col-lg-3">
+					<div class="site-logo-wrap d-flex align-items-center">
+						<div class="site-logo">
+							<a href="/">
+								<img src="/photos/logo/logo.png" alt="موسسه نوآور اردوش" class="site-logo-image">
+							</a>
+						</div>
+						<div class="site-title-container">
+							<a href="/">
+								<h1 class="site-title" style="padding-left: 12px;">Erdos Innovative Institute</h1>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-auto col-md-8 col-lg-9 px-0">
+					
+    <nav class="navbar navbar-dark d-lg-none px-0 h-100 " role="navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+        <div class="container justify-content-end pr-0">
+                
+                    
+                        <ul class="navbar-nav flex-row mt-0 ">
+                            <li class="nav-item d-none d-md-flex bk">
+                                <a href="/site/signin" class="nav-link pb-0">
+                                    Login
+                                </a>
+                            </li>
+                            
+                                <li class="nav-item d-none d-md-flex">
+                                    <a href="/site/signup" class="nav-link pb-0">
+                                        Signup
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+            <div class="offcanvas mt-lg-15 mr-1" navbar-offcanvas="">
+                <div class="offcanvas-overlay"></div>
+                <button type="button" class="navbar-toggler" navbar-offcanvas-toggle="">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="offcanvas-111395994" class="offcanvas-sidebar">
+                    <div class="offcanvas-header">
+                        <a class="offcanvas-brand" href="javascript:;">
+                            Menu
+                        </a>
+                        <button type="button" class="offcanvas-close">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                    <ul class="offcanvas-nav" role="menu">
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="home.html" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    home
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item active" data-subset="2">
+                                <a href="/c/c.html" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Virtual training
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-1" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="5">
+                                <a href="/c/onlineclasses" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Online Courses of Erdos
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/onlineclasses/pclasses-1402" class="offcanvas-nav-link" itemprop="url" target="_self">
+									Elementary math Olympiad (autumn 1402)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/onlineclasses/tclasses-1402" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Special course for gifted students (autumn 1402)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/onlineclasses/mclass1402" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Mathematical Olympiad of secondary school (autumn 1402)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/onlineclasses/sclasses-1402" class="offcanvas-nav-link" itemprop="url" target="_self">
+									Elementary and Secondary Science Olympiad (Autumn 1402)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/onlineclasses/e402" class="offcanvas-nav-link" itemprop="url" target="_self">
+									KGL English courses (autumn 1402)
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="2">
+                                <a href="/c/onlineclasses.html" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Erdos online workshops
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/workshops/igo" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    IGO2023 Olympiad preparation workshop
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/workshops/wn" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    VANDA Science Olympiad preparation workshop 2023
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="4">
+                                <a href="/cmpp.html" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Competitions
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-1" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="8" dir="ltr" style="float: left;">
+                                <a href="/ec/co" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    International competitions (first stage)
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/amo2023" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    University of Illinois Mathematical Olympiad (AMO)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/singa2023" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Singapore Mathematics Olympiad (SINGA)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/igc-iran" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    International Geometry Olympiad (IGC)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/sasmoiran" class="offcanvas-nav-link" itemprop="url" target="_blank">
+                                    Asian Mathematical Olympiad (Sasmo)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/vandairan" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    International Science Olympiad (Vanda)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/drctiran" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Olympiad of creativity and Asian design thinking (Dr CT)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/kglenglishcontest" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    International English Language Competition (KGL)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/datascienceiran" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    International Computer Olympiad (Data Science)
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="5">
+                                <a href="/ec/final-competition-steam-ahead" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    International competitions (final stage)
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/final-competition-steam-ahead/erdos-ijmo2023" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Asian Junior Mathematics Olympiad IJMO
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/final-competition-steam-ahead/vanda-final2023" class="offcanvas-nav-link" itemprop="url" target="_self">
+									Science Olympiad VANDA FINALS                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/final-competition-steam-ahead/simociran2023" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Singapore International Mathematical Olympiad (SIMOC)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/final-competition-steam-ahead/erdos-drct-final-2021" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Dr.Ct FINAL competitions                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="1">
+                                <a href="/ec/final-competition-steam-ahead/singafinal" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Singapore World Mathematical Olympiad (SINGA FINAL)
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-3" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/final-competition-steam-ahead/singafinal/singaf2022" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Registration form for the final stage of SINGA Olympiad 2022
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="1">
+                                <a href="/ec/na" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    آزمون های داخلی
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/na/azmoon" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    آزمونهای شیبه ساز تیزهوشان 1401
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="1">
+                                <a href="/ec/competition-results" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    نتایج مسابقات بین المللی
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="1">
+                                <a href="/ec/competition-results/ijhs" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    INTERNATIONAL  JUNIOR  HONOR  SOCIETY  (IJHS)
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-3" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/competition-results/ijhs/2023" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    IJHS-2023
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            
+                        
+                            <li class="offcanvas-nav-item " data-subset="6">
+                                <a href="/gallary.html" class="offcanvas-nav-link" itemprop="url" target="_self">
+									Gallary
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-1" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/gallery/gallery1" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    فعالیت های عمومی
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/gallery/gallery3" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    افتخارات و گواهینامه ها
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/gallery/kangaroocamp" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    کمپ  بین المللی ترکیه
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/gallery/2019" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    مراسم تقدیر مسابقات سال 2019
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/gallery/achievements" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    جوایز، لوح ها و مدالهای مسابقات
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/gallery/gallery2" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    دست سازهای ریاضی
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            
+                        
+       
+                        
+                            <li class="offcanvas-nav-item" data-subset="4">
+                                <a href="/aboutusma.html" class="offcanvas-nav-link" itemprop="url" target="_self">
+									About us
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-1" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/aboutus/faq" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    سوالات متداول
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/aboutus/paulerdos" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    درباره پال اردوش
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/aboutus/resume-master" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    رزومه مدیریت موسسه اردوش
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/aboutus/contact-us" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    تماس با ما
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="4">
+                                <a href="/persian.html" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    English
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-1" role="menu">
+                                        
+                            <li class="offcanvas-nav-item" data-subset="0">
+                                <a href="/en/en-aboutus" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    About Us
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/en/en-connectus" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Connect Us
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/en/text-86" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Our Department
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/en/gallery" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Honors &amp; Cetificates
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+					<!--navigation-->
+					
+						<div class="site-menu d-lg-flex align-items-center justify-content-end d-none">
+    <div class="site-menu-wrap">
+        
+            <nav class="navbar navbar-dark navbar-expand-lg px-0" role="navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                <div class="container px-0" navbar-menu="">
+                    <!--
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-111395994" aria-expanded="false" aria-controls="navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>-->
+                    <a class="navbar-brand d-lg-none float-left" href="javascript:;">
+                        <!--menu-->
+                    </a>
+                    <div id="navbar-111395994" class="navbar-collapse collapse">
+                        <ul class="navbar-nav" role="menu">
+                            
+                                <li class="nav-item " data-subset="0">
+                                    <a href="/home.html" class="nav-link" itemprop="url" target="_self">
+                                        Home
+                                    </a>
+                                    
+                                </li>
+                            
+                                <li class="nav-item active" data-subset="2">
+                                    <a href="/c/c.html" class="nav-link" itemprop="url" target="_self">
+										Virtual training
+                                    </a>
+                                    
+                                        <ul class="nav-subset" role="menu">
+                                            
+                                                <li class="nav-subset-item " data-subset="5">
+                                                    <a href="/c/onlineclasses.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Erdos Online Classes
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+     
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/c/onlineclasses/mclass1402.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Secondary Mathematics Olympiad (Autumn 1402)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/c/onlineclasses/sclasses-1402.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Olympiad of primary and secondary sciences (Autumn 1402)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/c/onlineclasses/e402.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        KGL English Language Courses (Fall 1402)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="2">
+                                                    <a href="/c/workshops.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Online Workshops
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/c/workshops/sasmo.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Olympiadze Preparation Workshop  IGO2023
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/c/workshops/wn.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Vanda Science Olympiad Preparation Workshop VANDA 2023
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                                <li class="nav-item " data-subset="3">
+                                    <a href="/cmpp.html" class="nav-link" itemprop="url" target="_self">
+										Competitions
+                                    </a>
+                                    
+                                        <ul class="nav-subset" role="menu">
+                                            
+                                                <li class="nav-subset-item " data-subset="8">
+                                                    <a href="/ec/co/datascienceiran.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        International Competitions (First Stage)
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/amo2023/form.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Mathematical Olympiad of the University of Illinois (AMO)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/singa2023/singaform2023.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        the Singapore Mathematical Olympiad (SINGA)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/igc-iran/fc.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        International Geometry Olympiad (IGC)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/sasmoiran/competitionsasmog.html" class="nav-subset-link" itemprop="url" target="_blank">
+                                                        Asian Mathematical Olympiad (Sasmo)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/vandairan/competitionvandag.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        International Science Olympiad (Vanda)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/drctiran/drctiran.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Asian Creativity and Design Thinking Olympiad (Dr CT)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/kglenglishcontest/kglenglishcontest.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        International English Language Competitions (KGL)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <!-- <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/datascienceiran" class="nav-subset-link" itemprop="url" target="_self">
+                                                         Data Science
+                                                    </a>
+                                                    
+                                                </li> -->
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="5">
+                                                    <a href="/ec/final-competition-steam-ahead/erdos-drct-final-2021.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        International Competitions (Showdown)
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/final-competition-steam-ahead/erdos-ijmo2023/ijmo2023.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Asian Junior Math Olympiad (IJMO)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/final-competition-steam-ahead/vanda-final2023/form2023.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        VANDA FINALS
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/final-competition-steam-ahead/simociran2023/form-13.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Singapore International Mathematical Olympiad (SIMOC)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <!-- <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/final-competition-steam-ahead/erdos-drct-final-2021" class="nav-subset-link" itemprop="url" target="_self">
+                                                          Dr.Ct FINAL
+                                                    </a>
+                                                    
+                                                </li> -->
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/final-competition-steam-ahead/singafinal/singaf2022.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Singapore International Mathematical Olympiad (SINGA FINAL)
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <!-- <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/final-competition-steam-ahead/singafinal/singaf2022" class="nav-subset-link" itemprop="url" target="_self">
+                                                        SINGA 2022 Olympiad Finals Registration Form
+                                                    </a> -->
+                                                    
+                                                <!-- </li> -->
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                <!-- <li class="nav-subset-item " data-subset="1">
+                                                    <a href="/ec/na" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Internal Tests
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/na/azmoon" class="nav-subset-link" itemprop="url" target="_self">
+                                                        1401 Sharp-Sharpening Tests
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li> -->
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/competition-results/competition-results.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Results of international competitions
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <!-- <li class="nav-subset-item " data-subset="1">
+                                                    <a href="/ec/competition-results/ijhs" class="nav-subset-link" itemprop="url" target="_self">
+                                                        INTERNATIONAL  JUNIOR  HONOR  SOCIETY  (IJHS)
+                                                    </a> -->
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <!-- <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/competition-results/ijhs/2023" class="nav-subset-link" itemprop="url" target="_self">
+                                                        IJHS-2023
+                                                    </a>
+                                                    
+                                                </li> -->
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                            
+                                <li class="nav-item " data-subset="4">
+
+                                    
+                                        <ul class="nav-subset" role="menu">
+                                            
+                                                <li class="nav-subset-item " data-subset="1">
+                                                    <a href="/services/tours" class="nav-subset-link" itemprop="url" target="_self">
+                                                        International Tours
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/services/tours/%DA%A9%D9%85%D9%BE-%D8%AA%D8%B1%DA%A9%DB%8C%D9%87-%D8%A7%D8%B1%D8%AF%D9%88%D8%B4" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Turkey International Camp Registration
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/services/vebinars-workshpos" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Conferences and Webinars
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="1">
+                                                    <a href="/services/moshavereh-barnamerizi" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Counseling and academic planning
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/services/moshavereh-barnamerizi/barnamehrizi-tahsili-ftoshgah" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Consulting and Planning Package
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/services/moshavereh" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Intelligence and Talent Identification
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+
+                                <li class="nav-item " data-subset="1">
+                                    <a href="/services.html" class="nav-link" itemprop="url" target="_self">
+										Events
+                                    </a>
+
+                                    <ul class="nav-subset" role="menu">
+                                            
+
+                                            
+                                        <li class="nav-subset-item " data-subset="0">
+                                            <a href="/services/vebinars-workshpos.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                Workshop & Seminar
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                    
+                                </ul>
+
+                                <li class="nav-item " data-subset="6">
+                                    <a href="/gallary.html" class="nav-link" itemprop="url" target="_self">
+										Gallery
+                                    </a>
+                                    
+                                        <ul class="nav-subset" role="menu">
+                                            
+
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/gallery/gallery3.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Honors and Certificates
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/gallery/kangaroocamp.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        international Activities
+                                                    </a>
+                                                    
+                                                </li>
+
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/gallery/gallery1.html" class="nav-subset-link" itemprop="url" target="_self">
+														Public Activities
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <!-- <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/gallery/2019" class="nav-subset-link" itemprop="url" target="_self">
+                                                        2019 Competition Appreciation Ceremony
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/gallery/achievements" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Awards, Plaques and Tournament Medals
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/gallery/gallery2" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Math Handmade's
+                                                    </a>
+                                                    
+                                                </li> -->
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                           
+                            
+                                <li class="nav-item" data-subset="4">
+                                    <a href="/aboutusma.html" class="nav-link" itemprop="url" target="_self">
+                                         About us
+                                    </a>
+                                    
+                                        <ul class="nav-subset" role="menu">
+                                                
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/aboutus/faq/faq.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Faq
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+
+                                            
+                                                <!-- <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/aboutus/resume-master" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Resume of Ardash Institute Management
+                                                    </a> -->
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/aboutus/contact-us.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Contact Us
+                                                    </a>
+                                                    
+                                                </li>
+
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/aboutus/paulerdos.html" class="nav-subset-link" itemprop="url" target="_self">
+                                                        About Paul Erdoush
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                                <li class="nav-item " data-subset="0">
+                                    <a href="http://erdos.ir/" class="nav-link" itemprop="url" target="_self">
+                                        فارسی
+                                    </a>
+                                    
+                                        <!-- <ul class="nav-subset" role="menu">
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/en/en-aboutus" class="nav-subset-link" itemprop="url" target="_self">
+                                                        درباره ما
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/en/en-connectus" class="nav-subset-link" itemprop="url" target="_self">
+                                                        ارتباط با ما
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/en/text-86" class="nav-subset-link" itemprop="url" target="_self">
+                                                        دپارتمان ما
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/en/gallery" class="nav-subset-link" itemprop="url" target="_self">
+                                                        افتخارات
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                        </ul> -->
+                                    
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        
+    </div>
+</div>
+					
+					<!--/navigation-->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-header-placeholder">
+		
+	</div>
+
+
+	
+
+<!--main-->
+<main class="page-container store-container store-compact-container" itemprop="mainEntity" itemscope="" itemtype="http://schema.org/ItemList">
+	<div class="container">
+		<div class="page-context store-context store-compact-context" store="">
+			
+	<ol class="breadcrumb" itemprop="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+		<li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a href="/" itemprop="item">
+				<span itemprop="name">
+					خانه
+				</span>
+			</a>
+			<meta itemprop="position" content="0">
+		</li>
+		
+			<li class="breadcrumb-item " itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<a href="/c" itemprop="item">
+					<span itemprop="name">
+						آموزش مجازي
+					</span>
+				</a>
+				<meta itemprop="position" content="0">
+			</li>
+		
+			<li class="breadcrumb-item " itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<a href="/c/onlineclasses" itemprop="item">
+					<span itemprop="name">
+						کلاس هاي آنلاین اردوش
+					</span>
+				</a>
+				<meta itemprop="position" content="1">
+			</li>
+		
+			<li class="breadcrumb-item active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<a href="/c/onlineclasses/sclasses-1402" itemprop="item">
+					<span itemprop="name">
+						المپیاد علوم دوره ابتدایی و متوسطه (زمستان 1402)
+					</span>
+				</a>
+				<meta itemprop="position" content="2">
+			</li>
+		
+	</ol>
+
+
+			<h1 class="page-title store-title store-compact-title" itemprop="headline">
+				المپیاد علوم دوره ابتدایی و متوسطه (زمستان 1402)
+			</h1>
+			
+			
+				<link itemprop="image" href="/uploads/pages/670bf5.jpg">
+			
+			
+				<hr class="page-separator store-separator store-compact-separator">
+				<div class="page-description store-description store-compact-description break-word" itemprop="description">
+					<p><span style="font-size: 18px; color: rgb(243, 121, 52); font-family: IranSansWeb;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">دوستای خوب اردوش</strong>&nbsp;</span></p><p style="text-align: justify;"><span style="font-size: 22px;">&nbsp;به اواسط سال تحصیلی نزدیک می شیم و ترم زمستان در راهه که تو رو کمک کنه تا همه ی اون چیزی رو که واسه رسیدن به قله لازم داری رو بهت برسونه. پس این فرصت رو از دست ندید و با انگیزه و پرانرژی مسیرتو انتخاب کن و به سمت هدفت پرتوان حرکت کن.</span><span style="font-size: 18px; font-family: IranSansWeb;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><img src="/uploads/editor/cb48ca.jpg" style="display: block; vertical-align: top; margin: 5px auto; cursor: pointer; position: relative; max-width: 100%;" fr-original-style="display: block; vertical-align: top; margin: 5px auto;" fr-original-class="fr-draggable"></strong></span></p><p><span style="font-size: 24px; color: rgb(243, 121, 52); font-family: IranSansWeb;"><strong>تقویم آموزشی کلاسهای علوم ترم زمستان 1402 :</strong></span></p><p style="text-align: justify;"><span style="font-size: 22px; font-family: IranYekanWeb;">مثل همیشه موسسه اردوش با معرفی کلاس های آنلاین زمستانه انتخاب رو واست ساده کرده تا با خیال راحت بتونی بر روی هدفت تمرکز کنی.</span></p><p style="text-align: center;"><span style="font-size: 18px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><img src="/uploads/editor/0513b6.jpg" style="display: block; vertical-align: top; margin: 5px auto; cursor: pointer; position: relative; max-width: 100%;" fr-original-style="display: block; vertical-align: top; margin: 5px auto;" fr-original-class="fr-draggable" loading="lazy"></strong></span><br></p><p style="text-align: center;"><strong><span style="font-size: 24px; color: rgb(184, 49, 47);">مباحث ترم زمستان ادامه مباحث ترم تابستان و پاییز خواهد بود</span></strong></p><p style="text-align: center;"><span style="font-family: Lalezar; font-size: 36px; color: rgb(184, 49, 47);">شروع کلاسها : از اوایل بهمن ماه 1402<img src="/uploads/editor/ffb404.png" style="display: block; vertical-align: top; margin: 5px auto; cursor: pointer; position: relative; max-width: 100%;" fr-original-style="display: block; vertical-align: top; margin: 5px auto;" fr-original-class="fr-draggable" loading="lazy"></span></p>
+				</div>
+			
+			<div class="store-compact-topbar">
+				<hr class="page-separator store-separator store-compact-separator">
+				<!--topbar-->
+<div class="store-topbar">
+	<form class="row" ng-submit="search()">
+		<div class="col-lg-5 col-xl-4">
+			<div class="store-topbar-search">
+				<div class="input-group store-topbar-search-query">
+					<input type="text" class="form-control store-topbar-search-query-input" maxlength="100" value="" ng-model="model.query" ng-disabled="loading" placeholder="جستجو کنید...">
+					<div class="input-group-append">
+						<span class="input-group-text">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" id="store-topbar-search-available" name="rememberme" class="custom-control-input store-topbar-search-available-input" ng-model="model.available" ng-disabled="loading">
+								<label class="custom-control-label store-topbar-search-available-label" for="store-topbar-search-available">
+									موجود
+								</label>
+							</div>
+						</span>
+						<button class="btn btn-secondary store-topbar-search-query-submit">
+							<i class="fa fa-fw fa-check"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-lg-auto mr-lg-auto d-flex flex-wrap">
+			<div class="dropdown store-topbar-sorting">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+					ترتیب نمایش
+				</button>
+				<div class="dropdown-menu dropdown-menu-right store-topbar-sorting-list">
+					<button class="dropdown-item store-topbar-sorting-item" ng-class="model.sorting == null ? 'btn-blue' : 'btn-link'" ng-click="sort()">
+						جدیدترین
+					</button>
+					<button class="dropdown-item store-topbar-sorting-item" ng-class="model.sorting == 'rate' ? 'btn-blue' : 'btn-link'" ng-click="sort('rate')">
+						محبوب‌ترین
+					</button>
+					<button class="dropdown-item store-topbar-sorting-item" ng-class="model.sorting == 'price-desc' ? 'btn-blue' : 'btn-link'" ng-click="sort('price-desc')">
+						گران‌ترین
+					</button>
+					<button class="dropdown-item store-topbar-sorting-item" ng-class="model.sorting == 'price' ? 'btn-blue' : 'btn-link'" ng-click="sort('price')">
+						ارزان‌ترین
+					</button>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+	</form>
+</div>
+<!--/topbar-->
+			</div>
+			<hr class="page-separator store-separator store-compact-separator">
+			<div store-ajax-context="">
+				<div class="store-loading store-compact-loading" ng-show="loading" auto-show="">
+					<i class="fa fa-refresh fa-spin fa-fw"></i>
+					کمی صبر کنید...
+				</div>
+				
+				
+					<div class="store-products store-compact-products" ng-hide="loading">
+						<div class="row">
+							
+								<div class="col-6 col-sm-4 col-lg-3 col-xxl-3">
+									<article class='store-product store-compact-product rounded ' itemprop="itemListElement" itemscope="" itemtype="http://schema.org/Product">
+										<div class="store-product-top position-relative mb-1">
+											<div class="store-product-image store-compact-product-image">
+												<a href="/g9-10" class="store-product-image-link store-compact-product-image-link" title="دوره علوم پیشرفته پایه 9 کد 124">
+													<img src='/uploads/products/8e9504.jpg?m=thumb&w=200&h=200&q=high&f=2' class="img-fluid center-block store-product-image-element store-compact-product-image-element" alt="دوره علوم پیشرفته پایه 9 کد 124" itemprop="image">
+												</a>
+											</div>
+											<div class="store-compact-product-title-container justify-content-center px-sm-2 py-1 mt-0 d-flex align-items-center">
+												<h3 class="store-product-title store-compact-product-title mt-0 text-center" itemprop="name">
+													<a href="/g9-10" class="store-product-link store-compact-product-link" title="دوره علوم پیشرفته پایه 9 کد 124" itemprop="url mainEntityOfPage">
+														دوره علوم پیشرفته پایه 9 کد 124
+													</a>
+												</h3>
+											</div>
+											<div class="store-product-link-mask">
+												<a href="/g9-10"></a>
+											</div>
+										</div>
+										<div class="store-product-bottom d-flex flex-column align-items-center justify-content-center">
+											
+											
+												<span class="store-product-price store-compact-product-price w-100 text-center d-block pb-1" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+													<meta itemprop="price" content="12000000">
+													<meta itemprop="priceCurrency" content="IRR">
+													<span>1,200,000 تومان</span>
+												</span>
+											
+										</div>
+										
+										<meta itemprop="position" content="0">
+										
+											<div class="text-center mb-3">
+												<button class="btn btn-sm btn-primary store-compact-product-quick-view" ng-click="quickview(160231008, '/site/cart')">
+													
+													
+														<i class="fa fa-shopping-cart"></i>
+														خرید
+													
+												</button>
+											</div>
+										
+									</article>
+								</div>
+							
+								<div class="col-6 col-sm-4 col-lg-3 col-xxl-3">
+									<article class='store-product store-compact-product rounded ' itemprop="itemListElement" itemscope="" itemtype="http://schema.org/Product">
+										<div class="store-product-top position-relative mb-1">
+											<div class="store-product-image store-compact-product-image">
+												<a href="/g8s" class="store-product-image-link store-compact-product-image-link" title="دوره علوم پیشرفته پایه 8 کد 123">
+													<img src='/uploads/products/c6bc4b.jpg?m=thumb&w=200&h=200&q=high&f=2' class="img-fluid center-block store-product-image-element store-compact-product-image-element" alt="دوره علوم پیشرفته پایه 8 کد 123" itemprop="image">
+												</a>
+											</div>
+											<div class="store-compact-product-title-container justify-content-center px-sm-2 py-1 mt-0 d-flex align-items-center">
+												<h3 class="store-product-title store-compact-product-title mt-0 text-center" itemprop="name">
+													<a href="/g8s" class="store-product-link store-compact-product-link" title="دوره علوم پیشرفته پایه 8 کد 123" itemprop="url mainEntityOfPage">
+														دوره علوم پیشرفته پایه 8 کد 123
+													</a>
+												</h3>
+											</div>
+											<div class="store-product-link-mask">
+												<a href="/g8s"></a>
+											</div>
+										</div>
+										<div class="store-product-bottom d-flex flex-column align-items-center justify-content-center">
+											
+											
+												<span class="store-product-price store-compact-product-price w-100 text-center d-block pb-1" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+													<meta itemprop="price" content="12000000">
+													<meta itemprop="priceCurrency" content="IRR">
+													<span>1,200,000 تومان</span>
+												</span>
+											
+										</div>
+										
+										<meta itemprop="position" content="1">
+										
+											<div class="text-center mb-3">
+												<button class="btn btn-sm btn-primary store-compact-product-quick-view" ng-click="quickview(160231007, '/site/cart')">
+													
+													
+														<i class="fa fa-shopping-cart"></i>
+														خرید
+													
+												</button>
+											</div>
+										
+									</article>
+								</div>
+							
+								<div class="col-6 col-sm-4 col-lg-3 col-xxl-3">
+									<article class='store-product store-compact-product rounded ' itemprop="itemListElement" itemscope="" itemtype="http://schema.org/Product">
+										<div class="store-product-top position-relative mb-1">
+											<div class="store-product-image store-compact-product-image">
+												<a href="/g7s" class="store-product-image-link store-compact-product-image-link" title="دوره علوم پیشرفته پایه 7 کد 122">
+													<img src='/uploads/products/f2de8d.jpg?m=thumb&w=200&h=200&q=high&f=2' class="img-fluid center-block store-product-image-element store-compact-product-image-element" alt="دوره علوم پیشرفته پایه 7 کد 122" itemprop="image">
+												</a>
+											</div>
+											<div class="store-compact-product-title-container justify-content-center px-sm-2 py-1 mt-0 d-flex align-items-center">
+												<h3 class="store-product-title store-compact-product-title mt-0 text-center" itemprop="name">
+													<a href="/g7s" class="store-product-link store-compact-product-link" title="دوره علوم پیشرفته پایه 7 کد 122" itemprop="url mainEntityOfPage">
+														دوره علوم پیشرفته پایه 7 کد 122
+													</a>
+												</h3>
+											</div>
+											<div class="store-product-link-mask">
+												<a href="/g7s"></a>
+											</div>
+										</div>
+										<div class="store-product-bottom d-flex flex-column align-items-center justify-content-center">
+											
+											
+												<span class="store-product-price store-compact-product-price w-100 text-center d-block pb-1" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+													<meta itemprop="price" content="12000000">
+													<meta itemprop="priceCurrency" content="IRR">
+													<span>1,200,000 تومان</span>
+												</span>
+											
+										</div>
+										
+										<meta itemprop="position" content="2">
+										
+											<div class="text-center mb-3">
+												<button class="btn btn-sm btn-primary store-compact-product-quick-view" ng-click="quickview(160231006, '/site/cart')">
+													
+													
+														<i class="fa fa-shopping-cart"></i>
+														خرید
+													
+												</button>
+											</div>
+										
+									</article>
+								</div>
+							
+								<div class="col-6 col-sm-4 col-lg-3 col-xxl-3">
+									<article class='store-product store-compact-product rounded ' itemprop="itemListElement" itemscope="" itemtype="http://schema.org/Product">
+										<div class="store-product-top position-relative mb-1">
+											<div class="store-product-image store-compact-product-image">
+												<a href="/g5-6" class="store-product-image-link store-compact-product-image-link" title="دوره علوم پیشرفته پایه 5-6 کد 121">
+													<img src='/uploads/products/494989.jpg?m=thumb&w=200&h=200&q=high&f=2' class="img-fluid center-block store-product-image-element store-compact-product-image-element" alt="دوره علوم پیشرفته پایه 5-6 کد 121" itemprop="image">
+												</a>
+											</div>
+											<div class="store-compact-product-title-container justify-content-center px-sm-2 py-1 mt-0 d-flex align-items-center">
+												<h3 class="store-product-title store-compact-product-title mt-0 text-center" itemprop="name">
+													<a href="/g5-6" class="store-product-link store-compact-product-link" title="دوره علوم پیشرفته پایه 5-6 کد 121" itemprop="url mainEntityOfPage">
+														دوره علوم پیشرفته پایه 5-6 کد 121
+													</a>
+												</h3>
+											</div>
+											<div class="store-product-link-mask">
+												<a href="/g5-6"></a>
+											</div>
+										</div>
+										<div class="store-product-bottom d-flex flex-column align-items-center justify-content-center">
+											
+											
+												<span class="store-product-price store-compact-product-price w-100 text-center d-block pb-1" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+													<meta itemprop="price" content="12000000">
+													<meta itemprop="priceCurrency" content="IRR">
+													<span>1,200,000 تومان</span>
+												</span>
+											
+										</div>
+										
+										<meta itemprop="position" content="3">
+										
+											<div class="text-center mb-3">
+												<button class="btn btn-sm btn-primary store-compact-product-quick-view" ng-click="quickview(160231002, '/site/cart')">
+													
+													
+														<i class="fa fa-shopping-cart"></i>
+														خرید
+													
+												</button>
+											</div>
+										
+									</article>
+								</div>
+							
+								<div class="col-6 col-sm-4 col-lg-3 col-xxl-3">
+									<article class='store-product store-compact-product rounded ' itemprop="itemListElement" itemscope="" itemtype="http://schema.org/Product">
+										<div class="store-product-top position-relative mb-1">
+											<div class="store-product-image store-compact-product-image">
+												<a href="/g3-4" class="store-product-image-link store-compact-product-image-link" title="دوره علوم پیشرفته پایه 3-4 کد 120">
+													<img src='/uploads/products/23d705.jpg?m=thumb&w=200&h=200&q=high&f=2' class="img-fluid center-block store-product-image-element store-compact-product-image-element" alt="دوره علوم پیشرفته پایه 3-4 کد 120" itemprop="image">
+												</a>
+											</div>
+											<div class="store-compact-product-title-container justify-content-center px-sm-2 py-1 mt-0 d-flex align-items-center">
+												<h3 class="store-product-title store-compact-product-title mt-0 text-center" itemprop="name">
+													<a href="/g3-4" class="store-product-link store-compact-product-link" title="دوره علوم پیشرفته پایه 3-4 کد 120" itemprop="url mainEntityOfPage">
+														دوره علوم پیشرفته پایه 3-4 کد 120
+													</a>
+												</h3>
+											</div>
+											<div class="store-product-link-mask">
+												<a href="/g3-4"></a>
+											</div>
+										</div>
+										<div class="store-product-bottom d-flex flex-column align-items-center justify-content-center">
+											
+											
+												<span class="store-product-price store-compact-product-price w-100 text-center d-block pb-1" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+													<meta itemprop="price" content="12000000">
+													<meta itemprop="priceCurrency" content="IRR">
+													<span>1,200,000 تومان</span>
+												</span>
+											
+										</div>
+										
+										<meta itemprop="position" content="4">
+										
+											<div class="text-center mb-3">
+												<button class="btn btn-sm btn-primary store-compact-product-quick-view" ng-click="quickview(160230944, '/site/cart')">
+													
+													
+														<i class="fa fa-shopping-cart"></i>
+														خرید
+													
+												</button>
+											</div>
+										
+									</article>
+								</div>
+							
+						</div>
+						
+					</div>
+				
+			</div>
+			<div class="store-filters store-compact-filters">
+				<!--filters-->
+<div class="store-filters">
+
+    <!--buttons-->
+    <div class="store-filters-buttons collapse show fade" id="store-filters-buttons">
+        <div class="d-flex">
+            <div class="w-100">
+                <button class="btn btn-lg btn-success btn-block store-filters-buttons-search" ng-click="$root.no_scroll=showSearch=true">
+                    <i class="fa fa-search"></i>
+                    جستجو
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    <!--/buttons-->
+
+    <!--search-->
+    <div class="store-filters-search" ng-show="showSearch" auto-show="">
+        <form class="store-filters-search-form" data-tabs="auto" ng-submit="$root.no_scroll=showSearch=false;search()">
+            <div class="form-group store-filters-search-query">
+                <label for="store-filters-search-query" class="store-filters-search-query-label">
+                    جستجو
+                </label>
+                <input type="text" name="query" id="store-filters-search-query" class="form-control store-filters-search-query-input" maxlength="100" value="" ng-model="model.query" ng-disabled="loading" placeholder="بنویسید...">
+            </div>
+            <div class="custom-control custom-checkbox store-filters-search-available">
+                <input type="checkbox" id="store-filters-search-available" class="custom-control-input store-filters-search-available-input" ng-model="model.available" ng-disabled="loading">
+                <label class="custom-control-label store-filters-search-available-label" for="store-filters-search-available">
+                    فقط محصولات موجود
+                </label>
+            </div>
+			<div class="form-group store-filters-search-sorting mt-15">
+                <select name="sorting" id="store-filters-search-sorting" class="form-control store-filters-search-sorting-input" ng-model="model.sorting" ng-disabled="loading">
+                    <option value="">به ترتیب جدیدترین</option>
+                    <option value="rate">به ترتیب محبوب‌ترین</option>
+                    <option value="price-desc">به ترتیب گران‌ترین</option>
+                    <option value="price">به ترتیب ارزان‌ترین</option>
+                </select>
+            </div>
+            
+            <div class="store-filters-buttons store-filters-search-buttons">
+                <div class="row no-gutters">
+                    <div class="col-12 col-sm-4">
+                        <button class="btn btn-lg btn-success btn-block store-filters-search-submit">
+                            <i class="fa fa-check-square"></i>
+                            اعمال
+                        </button>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <button type="button" class="btn btn-lg btn-secondary btn-block store-filters-search-cancel" ng-click="$root.no_scroll=showSearch=false;">
+                            <i class="fa fa-minus-square"></i>
+                            انصراف
+                        </button>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <button type="button" class="btn btn-lg btn-danger btn-block store-filters-search-remove" ng-click="$root.no_scroll=showSearch=false;remove()">
+                            <i class="fa fa-times"></i>
+                            حذف فیلتر
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--/search-->
+
+    <!--categories-->
+    <div class="store-filters-categories" ng-show="showCategories" auto-show="">
+        <h3 class="panel-heading store-filters-categories-title">
+            <i class="fa fa-sitemap fa-fw"></i>
+            دسته‌بندی
+        </h3>
+        <ul class="store-filters-categories-list">
+            
+        </ul>
+        <div class="store-filters-buttons store-filters-categories-buttons">
+            <button type="button" class="btn btn-lg btn-secondary btn-block store-filters-categories-cancel" ng-click="$root.no_scroll=showCategories=false;">
+                <i class="fa fa-minus-square"></i>
+                انصراف
+            </button>
+        </div>
+    </div>
+    <!--/categories-->
+
+</div>
+<!--/filters-->
+			</div>
+		</div>
+	</div>
+</main>
+<!--/main-->
+
+<footer class="mt-sm-50">
+	
+		<div class="footer-contact">
+			<div class="container clearfix">
+				<div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center align-items-lg-none">
+					
+					
+						<div class="footer-contact-item site-footer-address">
+							تبریز، خیابان گلگشت، پارک علم و فناوری آذربایجان شرقی - ساختمان شهریار واحد 2419
+						</div>
+					
+					<div class="footer-actions d-flex flex-column flex-sm-row-reverse justify-content-center justify-content-lg-none align-items-center">
+						<div class="footer-contact-item site-footer-social py-10 py-sm-auto">
+							
+								<a class="facebook site-footer-social-link" href="https://facebook.com/test">
+									<i class="fa fa-facebook site-footer-social-icon"></i>
+								</a>
+							
+							
+							
+								<a class="telegram site-footer-social-link" href="https://telegram.me/erdosh">
+									<i class="fa fa-send site-footer-social-icon"></i>
+								</a>
+							
+							
+								<a class="instagram site-footer-social-link" href="https://instagram.com/erdos_math">
+									<i class="fa fa-instagram site-footer-social-icon"></i>
+								</a>
+							
+							
+						</div>
+						
+							<div class="footer-contact-item site-footer-phone d-none-sm d-none-xs mr-0 mr-sm-20">
+								<i class="fa fa-phone"></i>
+								09363069089 -  09010446169 - 09030767438 -09029377438
+							</div>
+						
+						
+							<div class="footer-contact-item site-footer-email d-none-sm d-none-xs mr-0 mr-lg-25">
+								<i class="fa fa-envelope"></i>
+								info@erdos.ir
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+
+	
+		<div class="site-copyright">
+			<div class="container">
+				<p class="site-copyright-text d-inline-block">ساخت سایت توسط <a href="https://www.portal.ir/" target="_blank">پرتال</a></p>
+			</div>
+		</div>
+	
+</footer>
+
+<!--/quickview-->
+<!--quickview-->
+<form name="quickview" id="product-quickview-modal" class="modal modal-md product-quickview-modal" ng-submit="quickview.$valid && submit()" tabindex="-1" role="dialog" quick-view="" dynamic-form="" novalidate="">
+    <div class="modal-dialog product-quickview-modal-dialog" role="document">
+        <div class="modal-content product-quickview-modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title product-quickview-modal-title">
+                    <span ng-bind="title"></span>
+                </h5>
+                <button type="button" class="close product-quickview-modal-close-icon" data-dismiss="modal">
+                    <span aria-hidden="true">
+                        &times;
+                    </span>
+                </button>
+            </div>
+            <div class="modal-body product-quickview-modal-body">
+                
+                    <div class="alert alert-danger validation-summary product-quickview-modal-failed m-0 mb-3" ng-if="validation" ng-class="{'d-block' : validation}">
+                        <h6 class="alert-heading validation-summary-title product-quickview-modal-failed-title">
+                            <span ng-bind="validation.main"></span>
+                        </h6>
+                    </div>
+                
+                <div class="alert alert-success product-quickview-modal-succeed mb-0" ng-show="succeed">
+                    <span ng-bind="succeed.description"></span>
+                </div>
+                <div ng-show="loading">
+                    در حال بارگذاری...
+                </div>
+                <div ng-hide="succeed || loading">
+                    <div class="form-group product-quickview-modal-attribute" ng-repeat="attribute in attributes">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    {{attribute.name}}
+                                </span>
+                            </div>
+                            <select id="product-quickview-modal-attribute-{{$index}}" name="attribute{{$index}}" class="form-control product-quickview-modal-attribute-control" ng-model="model.attributes['attribute' + $index]" ng-change="changeAttribute()" ng-disabled="progress" required="">
+                                <option ng-repeat="value in attribute.values" value="{{attribute.name}}: {{value}}">
+                                    {{value}}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="validation-inline product-quickview-modal-inline-error text-danger" ng-messages="quickview['attribute' + $index].$error" ng-show="quickview.$submitted || quickview['attribute' + $index].$dirty">
+                            <span ng-message="required">
+                                {{attribute.name}} را انتخاب کنید.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group product-quickview-modal-quantity">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    تعداد
+                                </span>
+                            </div>
+                            <input type="number" id="product-quickview-modal-quantity" name="quantity" class="form-control product-quickview-modal-quantity-control" ng-model="model.quantity" ng-disabled="progress" dir="ltr" min="1" max="1000000000" required="">
+                        </div>
+                        <div class="validation-inline product-quickview-modal-inline-error text-danger" ng-messages="quickview.quantity.$error" ng-show="quickview.$submitted || quickview.quantity.$dirty">
+                            <span ng-message="required">
+                                تعداد را بنویسید.
+                            </span>
+                            <span ng-message="min">
+                                تعداد را بیش‌تر از 0 بنویسید.
+                            </span>
+                            <span ng-message="max">
+                                تعداد را کم‌تر از 10000000000 بنویسید.
+                            </span>
+                        </div>
+                    </div>
+                    <span class="product-quickview-modal-compare-price text-muted" ng-show="getComparePrice()">
+                        <del>{{getComparePrice() | number}}</del>
+                    </span>
+                    <span class="product-quickview-modal-price text-green" ng-show="getPrice()">
+                        {{getPrice() | number}} تومان
+                    </span>
+                </div>
+            </div>
+            <div class="modal-footer" ng-hide="succeed || loading">
+                <button type="button" class="btn btn-link product-quickview-modal-close" ng-disabled="progress" data-dismiss="modal">
+                    انصراف
+                </button>
+                <button class="btn btn-success product-quickview-modal-submit" ng-disabled="progress">
+                    افزودن به سبد خرید
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+<!--/quickview-->
+<!--/quickview-->
+
+<script type="text/javascript" src="/themes/custom-0c4b/js/bootstrap.js"></script>
+<script type="text/javascript" src="/themes/custom-0c4b/js/magnific.popup.js"></script>
+<script type="text/javascript" src="/themes/custom-0c4b/js/owl.carousel.js"></script>
+<script type="text/javascript" src="/themes/custom-0c4b/js/cedarmaps.js"></script>
+<script type="text/javascript" src="/themes/custom-0c4b/js/app.js"></script>
+<script src="/themes/custom-0c4b/js/custom.js?v=16" type="text/javascript"></script>
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-DEMGYDFHV5" async=""></script>
+<script type="text/javascript">
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+	gtag('config', 'G-DEMGYDFHV5');
+</script>
+
+
+<script>gtag && gtag('set', 'content_group', 'categories')</script>
+
+<script>
+    gtag && gtag('set', 'content_group', 'pages')
+</script>
+<script></script>
+<script type="text/javascript" src="/javascript/bootstrap.js"></script>
+<script type="text/javascript" src="/javascript/magsign.js"></script>
+<script type="text/javascript" src="/javascript/owlsign.js"></script>
+<script type="text/javascript" src="/javascript/cradmapssign.js"></script>
+<script type="text/javascript" src="/javascript/app.js"></script>
+<script src="/javascript/custom.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-DEMGYDFHV5" async=""></script>
+<script type="text/javascript">
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-DEMGYDFHV5');
+</script>
+
+
+</body></html>

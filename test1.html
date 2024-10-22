@@ -1,0 +1,2758 @@
+
+<!DOCTYPE html>
+<html dir="rtl" lang="fa" ng-app="siteBuilder.public">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>خانه | موسسه نوآور اردوش</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta property="og:title" content="خانه">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="http://erdos.ir/">
+	<meta property="og:site_name" content="موسسه نوآور اردوش">
+	<meta property="og:image" content=''>
+	<meta name="twitter:url" content="http://erdos.ir/">
+	<meta name="twitter:title" content="خانه | موسسه نوآور اردوش">
+	<meta name="twitter:description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="btstrp.css">
+    <link rel="stylesheet" href="ax.css">
+    <link rel="stylesheet" href="mag.css">
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="head.css">
+    <link rel="canonical" href="http://erdos.ir/"> <meta name="google-site-verification" content="Ob8FdmiR0koTIjVr1O0OsM-XqDTBvrTYMjhEc2Q-kIY" />
+</head>
+
+<body ng-class="{'no-scroll':no_scroll}" itemscope="" itemtype="http://schema.org/WebPage">
+
+	<div class="site-header">
+		<div class="site-header-contact d-flex justify-content-center align-items-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-6">
+						<div class="d-flex align-items-center">
+							<div class="site-header-user text-white ml-20 d-none d-lg-block">
+								
+								
+									<ul class="navbar-nav mr-auto d-flex flex-row">
+										<li class="nav-item ml-10">
+											<a href="/site/signin" class="nav-link">
+												Log in
+											</a>
+										</li>
+										
+											<li class="nav-item ml-10">
+												<a href="/site/signup" class="nav-link">
+													Signup						
+												</a>
+											</li>
+										
+										
+											<li class="nav-item mr-10 ml-0">
+												<a href="/site/cart" class="nav-link site-header-cart" cart="">
+													<i class="fa fa-shopping-cart site-header-cart-icon mr-half" aria-hidden="true"></i> 
+													<span class="badge badge-blue text-white ng-binding site-header-cart-badge" ng-bind="model.items.length || 0"></span>
+												</a>
+											</li>
+										
+									</ul>
+								
+							</div>
+							<!-- Search -->
+							<div class="site-header-search">
+								<form class="quicksearch header-search-form d-flex position-relative" action="/site/search" dynamic-search="" auto-show="">
+									<div class="quicksearch-query d-flex w-100">
+										<input type="text" class="header-search-input quicksearch-query-input" name="q" placeholder="جستجو ..." maxlength="100" ng-model="query" ng-model-options="{debounce:500}" autocomplete="off">
+										<button class="header-search-button quicksearch-query-button" type="submit">
+											<i class="fa fa-search"></i>
+										</button>
+									</div>
+									<div class="quicksearch-items d-none" ng-class="{'d-none': !items.length}">
+										<div class="quicksearch-item" ng-repeat="item in items">
+											<div class="quicksearch-item-image" ng-show="item.image">
+												<a ng-href="{{item.url}}" class="quicksearch-item-image-link">
+													<img ng-src="{{item.image}}?m=crop&w=70&h=70&q=high" class="quicksearch-item-image-element">
+												</a>
+											</div>
+											<h4 class="quicksearch-item-title text-right">
+												<a ng-href="{{item.url}}" class="quicksearch-item-link">
+													<span ng-bind="item.title"></span>
+												</a>
+											</h4>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					
+						<div class="col-sm-8 col-xs-6">
+							<div class="row justify-content-start align-items-center flex-row-reverse h-100">
+								
+								<div class="site-header-contact-item site-header-social d-none d-md-flex order-1">
+									<a class="facebook site-header-social-link" href="https://facebook.com/test">
+										<i class="fa fa-facebook site-header-social-icon"></i>
+									</a>
+									<a class="google-plus site-header-social-link" href="">
+										<i class="fa fa-google-plus site-header-social-icon"></i>
+									</a>
+									<a class="telegram site-header-social-link" href="https://telegram.me/erdosh">
+										<i class="fa fa-send site-header-social-icon"></i>
+									</a>
+									<a class="instagram site-header-social-link" href="https://instagram.com/erdos_math">
+										<i class="fa fa-instagram site-header-social-icon"></i>
+									</a>
+									<a class="linkedin site-header-social-link" href="">
+										<i class="fa fa-linkedin site-header-social-icon"></i>
+									</a>
+								</div>
+
+								<div class="site-header-contact-item site-header-phone d-none d-xs-flex order-2">
+									<i class="fa fa-phone site-header-contact-item-icon"></i>
+									09363069089 -  09010446169 - 09030767438 -09029377438
+								</div>
+
+								<div class="site-header-contact-item site-header-email d-none d-lg-flex order-3">
+									<i class="fa fa-envelope site-header-contact-item-icon"></i>
+									info@erdos.ir
+								</div>
+
+							</div>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row justify-content-between align-items-center py-10">
+				<div class="col-auto col-md-4 col-lg-3">
+					<div class="site-logo-wrap d-flex align-items-center">
+						<div class="site-logo">
+							<a href="/">
+								<img src="/uploads/logo/4d8712.png" alt="موسسه نوآور اردوش" class="site-logo-image">
+							</a>
+						</div>
+						<div class="site-title-container">
+							<a href="/">
+								<h1 class="site-title">موسسه نوآور اردوش</h1>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-auto col-md-8 col-lg-9 px-0">
+					
+    <nav class="navbar navbar-dark d-lg-none px-0 h-100" role="navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+        <div class="container justify-content-end pr-0">
+                
+                    
+                        <ul class="navbar-nav flex-row mt-0">
+                            <li class="nav-item d-none d-md-flex">
+                                <a href="/site/signin" class="nav-link pb-0">
+									Login
+								</a>
+                            </li>
+                            
+                                <li class="nav-item d-none d-md-flex">
+                                    <a href="/site/signup" class="nav-link pb-0">
+                                        Signup
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+            <div class="offcanvas mt-lg-15 mr-1" navbar-offcanvas="">
+                <div class="offcanvas-overlay"></div>
+                <button type="button" class="navbar-toggler" navbar-offcanvas-toggle="">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="offcanvas-111395994" class="offcanvas-sidebar">
+                    <div class="offcanvas-header">
+                        <a class="offcanvas-brand" href="javascript:;">
+                            منوی وب‌سایت
+                        </a>
+                        <button type="button" class="offcanvas-close">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                    <ul class="offcanvas-nav" role="menu">
+                        
+                            <li class="offcanvas-nav-item active" data-subset="0">
+                                <a href="/" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    خانه
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="2">
+                                <a href="/c" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    آموزش مجازي
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-1" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="5">
+                                <a href="/c/onlineclasses" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    کلاس هاي آنلاین اردوش
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/onlineclasses/pclasses-1402" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    المپیاد ریاضی دوره ابتدایی (پاییز 1402)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/onlineclasses/tclasses-1402" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    دوره ویژه تیزهوشان (پاییز 1402)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/onlineclasses/mclass1402" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    المپیاد ریاضی دوره متوسطه (پاییز 1402)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/onlineclasses/sclasses-1402" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    المپیاد علوم دوره ابتدایی و متوسطه (پاییز 1402)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/onlineclasses/e402" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    دوره های زبان انگلیسی KGL ( پاییز 1402)
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="2">
+                                <a href="/c/workshops" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    کارگاه هاي آنلاين اردوش
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/workshops/igo" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    کارگاه آمادگی المپیادهندسه  IGO2023
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/c/workshops/wn" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    کارگاه آمادگی المپیاد علوم وندا VANDA 2023
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="4">
+                                <a href="/ec" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    مسابقات
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-1" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="8">
+                                <a href="/ec/co" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    مسابقات بین المللی (مرحله اول)
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/amo2023" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    المپیاد رياضي دانشگاه ايلينويز (AMO)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/singa2023" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    المپیاد ریاضی سنگاپور (SINGA)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/igc-iran" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    المپیاد بین المللی هندسه (IGC)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/sasmoiran" class="offcanvas-nav-link" itemprop="url" target="_blank">
+                                    المپیاد ریاضی آسیایی (Sasmo)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/vandairan" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    المپیاد بین المللی علوم (Vanda)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/drctiran" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    المپیاد خلاقیت و تفکر طراحی آسیایی (Dr CT)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/kglenglishcontest" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    مسابقات بین المللی زبان انگلیسی (KGL)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/co/datascienceiran" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    المپیاد بین المللی کامپیوتر  (Data Science)
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="5">
+                                <a href="/ec/final-competition-steam-ahead" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    مسابقات بین المللی (مرحله نهایی)
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/final-competition-steam-ahead/erdos-ijmo2023" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    المپیاد ریاضی نوجوانان آسیا IJMO
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/final-competition-steam-ahead/vanda-final2023" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    المپیاد علوم  VANDA FINALS
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/final-competition-steam-ahead/simociran2023" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    المپیاد ریاضی بین المللی سنگاپور (SIMOC)
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/final-competition-steam-ahead/erdos-drct-final-2021" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    مسابقات Dr.Ct FINAL
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="1">
+                                <a href="/ec/final-competition-steam-ahead/singafinal" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    المپیاد جهانی ریاضی سنگاپور (SINGA FINAL)
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-3" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/final-competition-steam-ahead/singafinal/singaf2022" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    فرم ثبت نام مرحله نهایی المپیاد سینگا SINGA 2022
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="1">
+                                <a href="/ec/na" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    آزمون های داخلی
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/na/azmoon" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    آزمونهای شیبه ساز تیزهوشان 1401
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="1">
+                                <a href="/ec/competition-results" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    نتایج مسابقات بین المللی
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="1">
+                                <a href="/ec/competition-results/ijhs" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    INTERNATIONAL  JUNIOR  HONOR  SOCIETY  (IJHS)
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-3" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/ec/competition-results/ijhs/2023" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    IJHS-2023
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="4">
+                                <a href="/store-2" class="offcanvas-nav-link" itemprop="url" target="_blank">
+                                    فروشگاه
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-1" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/store-2/store-3" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    سری کتب المپیاد ریاضی آسیایی Sasmo
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/store-2/store-4" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    کتاب های ویژه آمادگی برای تیزهوشان
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/store-2/store-5" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    مجموعه کتب المپیاد ریاضی
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/store-2/rahgiri" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    کد رهگیری مرسولات پستی
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="4">
+                                <a href="/services" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    خدمات
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-1" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="1">
+                                <a href="/services/tours" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    تورهای بین المللی
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/services/tours/%DA%A9%D9%85%D9%BE-%D8%AA%D8%B1%DA%A9%DB%8C%D9%87-%D8%A7%D8%B1%D8%AF%D9%88%D8%B4" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    ثبت نام کمپ بین المللی ترکیه
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/services/vebinars-workshpos" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    همایش و وبینارها
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="1">
+                                <a href="/services/moshavereh-barnamerizi" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    مشاوره و برنامه ریزی تحصیلی
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-2" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/services/moshavereh-barnamerizi/barnamehrizi-tahsili-ftoshgah" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    پکیج مشاوره و برنامه ریزی
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/services/moshavereh" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    هوش و استعدادیابی
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="6">
+                                <a href="/gallery" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    گالری
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-1" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/gallery/gallery1" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    فعالیت های عمومی
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/gallery/gallery3" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    افتخارات و گواهینامه ها
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/gallery/kangaroocamp" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    کمپ  بین المللی ترکیه
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/gallery/2019" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    مراسم تقدیر مسابقات سال 2019
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/gallery/achievements" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    جوایز، لوح ها و مدالهای مسابقات
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/gallery/gallery2" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    دست سازهای ریاضی
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="2">
+                                <a href="/collegue" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    همکاران
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-1" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/collegue/list" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    همکاران موسسه اردوش
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/collegue/new" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    درخواست همکاري يا استخدام
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="4">
+                                <a href="/aboutus" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    درباره ما
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-1" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/aboutus/faq" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    سوالات متداول
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/aboutus/paulerdos" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    درباره پال اردوش
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/aboutus/resume-master" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    رزومه مدیریت موسسه اردوش
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/aboutus/contact-us" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    تماس با ما
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="4">
+                                <a href="/en" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    English
+                                </a>
+                                
+                                    <button type="button" class="offcanvas-nav-toggle">
+                                        <i class="fa offcanvas-nav-toggle-icon"></i>
+                                    </button>
+                                    <ul class="offcanvas-nav-subset offcanvas-nav-subset-1" role="menu">
+                                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/en/en-aboutus" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    About Us
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/en/en-connectus" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Connect Us
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/en/text-86" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Our Department
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="offcanvas-nav-item " data-subset="0">
+                                <a href="/en/gallery" class="offcanvas-nav-link" itemprop="url" target="_self">
+                                    Honors &amp; Cetificates
+                                </a>
+                                
+                            </li>
+                        
+                                    </ul>
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+					<!--navigation-->
+					
+						<div class="site-menu d-lg-flex align-items-center justify-content-end d-none">
+    <div class="site-menu-wrap">
+        
+            <nav class="navbar navbar-dark navbar-expand-lg px-0" role="navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                <div class="container px-0" navbar-menu="">
+                    <!--
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-111395994" aria-expanded="false" aria-controls="navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>-->
+                    <a class="navbar-brand d-lg-none float-left" href="javascript:;">
+                        <!-- منوی وب‌سایت -->
+                    </a>
+                    <div id="navbar-111395994" class="navbar-collapse collapse">
+                        <ul class="navbar-nav" role="menu">
+                            
+                                <li class="nav-item active" data-subset="0">
+                                    <a href="/" class="nav-link" itemprop="url" target="_self">
+                                        خانه
+                                    </a>
+                                    
+                                </li>
+                            
+                                <li class="nav-item " data-subset="2">
+                                    <a href="/c" class="nav-link" itemprop="url" target="_self">
+                                        آموزش مجازي
+                                    </a>
+                                    
+                                        <ul class="nav-subset" role="menu">
+                                            
+                                                <li class="nav-subset-item " data-subset="5">
+                                                    <a href="/c/onlineclasses" class="nav-subset-link" itemprop="url" target="_self">
+                                                        کلاس هاي آنلاین اردوش
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/c/onlineclasses/pclasses-1402" class="nav-subset-link" itemprop="url" target="_self">
+                                                        المپیاد ریاضی دوره ابتدایی (پاییز 1402)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/c/onlineclasses/tclasses-1402" class="nav-subset-link" itemprop="url" target="_self">
+                                                        دوره ویژه تیزهوشان (پاییز 1402)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/c/onlineclasses/mclass1402" class="nav-subset-link" itemprop="url" target="_self">
+                                                        المپیاد ریاضی دوره متوسطه (پاییز 1402)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/c/onlineclasses/sclasses-1402" class="nav-subset-link" itemprop="url" target="_self">
+                                                        المپیاد علوم دوره ابتدایی و متوسطه (پاییز 1402)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/c/onlineclasses/e402" class="nav-subset-link" itemprop="url" target="_self">
+                                                        دوره های زبان انگلیسی KGL ( پاییز 1402)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="2">
+                                                    <a href="/c/workshops" class="nav-subset-link" itemprop="url" target="_self">
+                                                        کارگاه هاي آنلاين اردوش
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/c/workshops/igo" class="nav-subset-link" itemprop="url" target="_self">
+                                                        کارگاه آمادگی المپیادهندسه  IGO2023
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/c/workshops/wn" class="nav-subset-link" itemprop="url" target="_self">
+                                                        کارگاه آمادگی المپیاد علوم وندا VANDA 2023
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                                <li class="nav-item " data-subset="4">
+                                    <a href="/ec" class="nav-link" itemprop="url" target="_self">
+                                        مسابقات
+                                    </a>
+                                    
+                                        <ul class="nav-subset" role="menu">
+                                            
+                                                <li class="nav-subset-item " data-subset="8">
+                                                    <a href="/ec/co" class="nav-subset-link" itemprop="url" target="_self">
+                                                        مسابقات بین المللی (مرحله اول)
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/amo2023" class="nav-subset-link" itemprop="url" target="_self">
+                                                        المپیاد رياضي دانشگاه ايلينويز (AMO)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/singa2023" class="nav-subset-link" itemprop="url" target="_self">
+                                                        المپیاد ریاضی سنگاپور (SINGA)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/igc-iran" class="nav-subset-link" itemprop="url" target="_self">
+                                                        المپیاد بین المللی هندسه (IGC)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/sasmoiran" class="nav-subset-link" itemprop="url" target="_blank">
+                                                        المپیاد ریاضی آسیایی (Sasmo)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/vandairan" class="nav-subset-link" itemprop="url" target="_self">
+                                                        المپیاد بین المللی علوم (Vanda)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/drctiran" class="nav-subset-link" itemprop="url" target="_self">
+                                                        المپیاد خلاقیت و تفکر طراحی آسیایی (Dr CT)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/kglenglishcontest" class="nav-subset-link" itemprop="url" target="_self">
+                                                        مسابقات بین المللی زبان انگلیسی (KGL)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/co/datascienceiran" class="nav-subset-link" itemprop="url" target="_self">
+                                                        المپیاد بین المللی کامپیوتر  (Data Science)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="5">
+                                                    <a href="/ec/final-competition-steam-ahead" class="nav-subset-link" itemprop="url" target="_self">
+                                                        مسابقات بین المللی (مرحله نهایی)
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/final-competition-steam-ahead/erdos-ijmo2023" class="nav-subset-link" itemprop="url" target="_self">
+                                                        المپیاد ریاضی نوجوانان آسیا IJMO
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/final-competition-steam-ahead/vanda-final2023" class="nav-subset-link" itemprop="url" target="_self">
+                                                        المپیاد علوم  VANDA FINALS
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/final-competition-steam-ahead/simociran2023" class="nav-subset-link" itemprop="url" target="_self">
+                                                        المپیاد ریاضی بین المللی سنگاپور (SIMOC)
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/final-competition-steam-ahead/erdos-drct-final-2021" class="nav-subset-link" itemprop="url" target="_self">
+                                                        مسابقات Dr.Ct FINAL
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="1">
+                                                    <a href="/ec/final-competition-steam-ahead/singafinal" class="nav-subset-link" itemprop="url" target="_self">
+                                                        المپیاد جهانی ریاضی سنگاپور (SINGA FINAL)
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/final-competition-steam-ahead/singafinal/singaf2022" class="nav-subset-link" itemprop="url" target="_self">
+                                                        فرم ثبت نام مرحله نهایی المپیاد سینگا SINGA 2022
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="1">
+                                                    <a href="/ec/na" class="nav-subset-link" itemprop="url" target="_self">
+                                                        آزمون های داخلی
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/na/azmoon" class="nav-subset-link" itemprop="url" target="_self">
+                                                        آزمونهای شیبه ساز تیزهوشان 1401
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="1">
+                                                    <a href="/ec/competition-results" class="nav-subset-link" itemprop="url" target="_self">
+                                                        نتایج مسابقات بین المللی
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="1">
+                                                    <a href="/ec/competition-results/ijhs" class="nav-subset-link" itemprop="url" target="_self">
+                                                        INTERNATIONAL  JUNIOR  HONOR  SOCIETY  (IJHS)
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/ec/competition-results/ijhs/2023" class="nav-subset-link" itemprop="url" target="_self">
+                                                        IJHS-2023
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                                <li class="nav-item " data-subset="4">
+                                    <a href="/store-2" class="nav-link" itemprop="url" target="_blank">
+                                        فروشگاه
+                                    </a>
+                                    
+                                        <ul class="nav-subset" role="menu">
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/store-2/store-3" class="nav-subset-link" itemprop="url" target="_self">
+                                                        سری کتب المپیاد ریاضی آسیایی Sasmo
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/store-2/store-4" class="nav-subset-link" itemprop="url" target="_self">
+                                                        کتاب های ویژه آمادگی برای تیزهوشان
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/store-2/store-5" class="nav-subset-link" itemprop="url" target="_self">
+                                                        مجموعه کتب المپیاد ریاضی
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/store-2/rahgiri" class="nav-subset-link" itemprop="url" target="_self">
+                                                        کد رهگیری مرسولات پستی
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                                <li class="nav-item " data-subset="4">
+                                    <a href="/services" class="nav-link" itemprop="url" target="_self">
+                                        خدمات
+                                    </a>
+                                    
+                                        <ul class="nav-subset" role="menu">
+                                            
+                                                <li class="nav-subset-item " data-subset="1">
+                                                    <a href="/services/tours" class="nav-subset-link" itemprop="url" target="_self">
+                                                        تورهای بین المللی
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/services/tours/%DA%A9%D9%85%D9%BE-%D8%AA%D8%B1%DA%A9%DB%8C%D9%87-%D8%A7%D8%B1%D8%AF%D9%88%D8%B4" class="nav-subset-link" itemprop="url" target="_self">
+                                                        ثبت نام کمپ بین المللی ترکیه
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/services/vebinars-workshpos" class="nav-subset-link" itemprop="url" target="_self">
+                                                        همایش و وبینارها
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="1">
+                                                    <a href="/services/moshavereh-barnamerizi" class="nav-subset-link" itemprop="url" target="_self">
+                                                        مشاوره و برنامه ریزی تحصیلی
+                                                    </a>
+                                                    
+                                                        <ul class="nav-subset" role="menu">
+                                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/services/moshavereh-barnamerizi/barnamehrizi-tahsili-ftoshgah" class="nav-subset-link" itemprop="url" target="_self">
+                                                        پکیج مشاوره و برنامه ریزی
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                        </ul>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/services/moshavereh" class="nav-subset-link" itemprop="url" target="_self">
+                                                        هوش و استعدادیابی
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                                <li class="nav-item " data-subset="6">
+                                    <a href="/gallery" class="nav-link" itemprop="url" target="_self">
+                                        گالری
+                                    </a>
+                                    
+                                        <ul class="nav-subset" role="menu">
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/gallery/gallery1" class="nav-subset-link" itemprop="url" target="_self">
+                                                        فعالیت های عمومی
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/gallery/gallery3" class="nav-subset-link" itemprop="url" target="_self">
+                                                        افتخارات و گواهینامه ها
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/gallery/kangaroocamp" class="nav-subset-link" itemprop="url" target="_self">
+                                                        کمپ  بین المللی ترکیه
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/gallery/2019" class="nav-subset-link" itemprop="url" target="_self">
+                                                        مراسم تقدیر مسابقات سال 2019
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/gallery/achievements" class="nav-subset-link" itemprop="url" target="_self">
+                                                        جوایز، لوح ها و مدالهای مسابقات
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/gallery/gallery2" class="nav-subset-link" itemprop="url" target="_self">
+                                                        دست سازهای ریاضی
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                                <li class="nav-item " data-subset="2">
+                                    <a href="/collegue" class="nav-link" itemprop="url" target="_self">
+                                        همکاران
+                                    </a>
+                                    
+                                        <ul class="nav-subset" role="menu">
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/collegue/list" class="nav-subset-link" itemprop="url" target="_self">
+                                                        همکاران موسسه اردوش
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/collegue/new" class="nav-subset-link" itemprop="url" target="_self">
+                                                        درخواست همکاري يا استخدام
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                                <li class="nav-item " data-subset="4">
+                                    <a href="/aboutus" class="nav-link" itemprop="url" target="_self">
+                                        درباره ما
+                                    </a>
+                                    
+                                        <ul class="nav-subset" role="menu">
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/aboutus/faq" class="nav-subset-link" itemprop="url" target="_self">
+                                                        سوالات متداول
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/aboutus/paulerdos" class="nav-subset-link" itemprop="url" target="_self">
+                                                        درباره پال اردوش
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/aboutus/resume-master" class="nav-subset-link" itemprop="url" target="_self">
+                                                        رزومه مدیریت موسسه اردوش
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/aboutus/contact-us" class="nav-subset-link" itemprop="url" target="_self">
+                                                        تماس با ما
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                                <li class="nav-item " data-subset="4">
+                                    <a href="/en" class="nav-link" itemprop="url" target="_self">
+                                        English
+                                    </a>
+                                    
+                                        <ul class="nav-subset" role="menu">
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/en/en-aboutus" class="nav-subset-link" itemprop="url" target="_self">
+                                                        About Us
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/en/en-connectus" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Connect Us
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/en/text-86" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Our Department
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                                <li class="nav-subset-item " data-subset="0">
+                                                    <a href="/en/gallery" class="nav-subset-link" itemprop="url" target="_self">
+                                                        Honors &amp; Cetificates
+                                                    </a>
+                                                    
+                                                </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        
+    </div>
+</div>
+					
+					<!--/navigation-->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-header-placeholder">
+		
+			<div style="margin-top:-140px"></div>
+		
+	</div>
+
+
+	
+
+
+	<div class="home-hero">
+		<div class="home-hero-items owl-carousel" options="{ autoplay: true, autoplayTimeout: 5000, autoplayHoverPause: true, smartSpeed: 500, loop:true, rtl: true, responsive:{ 0:{ items: 1 } } }">
+			
+				<div class="home-hero-item" style='background-image: url("/themes/custom-0c4b/userfiles/b1bdfe.png")'>
+					<div class="home-hero-img-overlay"></div>
+					<div class="home-hero-typo">
+						<div class="container">
+							<h2 class="home-hero-slogan mb-10">شروع ثبت نام المپیاد ریاضی نوجوانان جهان</h2>
+							<h3 class="home-hero-description mt-20"><div style="text-align: center;"><span style="font-size: 96px; font-family: Verdana;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="color: rgb(0, 0, 0);">IJMO 2023</span></strong></span></div><div style="text-align: center;"><span style="color: rgb(0, 0, 0);"><span style="font-size: 48px; font-family: Lalezar;">تنها ویژه مدال آوران</span><span style="font-size: 48px;"><span style="font-family: Lalezar;">&nbsp;</span></span></span></div><div style="text-align: center;"><span style="font-size: 48px;"><span style="font-family: Lalezar;"><span style="color: rgb(0, 0, 0);">SASMO 2023 - SIMOC 2023 - </span><span style="color: rgb(0, 0, 0);">AMO 2022</span></span></span></div><div style="text-align: center;"><span style="font-size: 48px; font-family: Lalezar;">شرکت در رقابت بین المللی مابین &nbsp;نخبگان 38 کشور دنیا</span></div></h3>
+								<a href="http://erdos.ir/ec/final-competition-steam-ahead/erdos-ijmo2023" class="btn btn-yellow">اطلاعات بیشتر و ثبت نام</a>
+							
+						</div>
+					</div>
+				</div>
+			
+				<div class="home-hero-item" style='background-image: url("/themes/custom-0c4b/userfiles/f4b755.png")'>
+					<div class="home-hero-img-overlay"></div>
+					<div class="home-hero-typo">
+						<div class="container">
+							<h2 class="home-hero-slogan mb-10">اسامی پذیرفته شدگان در انجمن دانش آموزان پرافتخار آسیا</h2>
+							<h3 class="home-hero-description mt-20"><div data-empty="true" style="text-align: center;"><span style="font-size: 48px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><em><span style="font-family: Tahoma; color: rgb(40, 50, 78);">INTERNATIONAL JUNIOR</span></em></strong><span style="font-family: Tahoma;"><span style="color: rgb(40, 50, 78);"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><em>&nbsp;</em></strong></span></span><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><em><span style="font-family: Tahoma; color: rgb(40, 50, 78);">HONOR </span></em></strong><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><em><span style="font-family: Tahoma; color: rgb(40, 50, 78);">SOCIETY</span></em></strong></span></div><div data-empty="true" style="text-align: center;"><span style="font-size: 60px; font-family: Georgia; color: rgb(40, 50, 78);">&nbsp; </span><span style="font-size: 72px; font-family: Georgia; color: rgb(40, 50, 78);"><strong>(IJHS-2023)</strong></span></div></h3>
+								<a href="http://erdos.ir/ec/competition-results/ijhs/2023" class="btn btn-yellow">دیدن نتایج سال 2023</a>
+							
+						</div>
+					</div>
+				</div>
+			
+				<div class="home-hero-item" style='background-image: url("/themes/custom-0c4b/userfiles/c8dc01.jpg")'>
+					<div class="home-hero-img-overlay"></div>
+					<div class="home-hero-typo">
+						<div class="container">
+							<h2 class="home-hero-slogan mb-10">شروع ثبت نام مرحله نهایی المپیاد علوم</h2>
+							<h3 class="home-hero-description mt-20"><div style="text-align: center;"><span style="font-size: 96px; font-family: Georgia; color: rgb(255, 255, 255);">VANDA FINAL 2023</span></div><div style="text-align: center;"><span style="font-size: 36px; font-family: Georgia;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">ویژه مدال آوران المپیاد وندا 2023</strong></span></div></h3>
+								<a href="http://erdos.ir/ec/final-competition-steam-ahead/vanda-final2023" class="btn btn-yellow">اطلاعات بیشتر و ثبت نام</a>
+							
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		
+			<div class="newsletter-section">
+				<div class="container">
+					<div class="newsletter-section-text">
+						<h3>به جمع خانواده بزرگ اردوش بپیوندید.</h3>
+						<div class="newsletter-section-text"><div><span style="font-size: 20px; color: rgb(239, 239, 239);">برای اطلاع از جدیدترین دوره ها و مسابقات موسسه اردوش، فرم زیر را پر نمایید تا اطلاعات مربوطه برای شما ارسال شود.</span></div></div>
+						
+					</div>
+
+					<form name="footersubscription" class="footer-subscription-form" ng-submit="footersubscription.$valid && submit()" eval="collect('Fyztrfr7nJ0po1vcwOhyIWl7qSyR58AAjtCyvJ/Sf1gmdbJC4mhys6DheveO+0fL')" subscription="" dynamic-form="" auto-show="" novalidate="">
+						<div class="newsletter-section-container col-centered">
+							
+								<div class="alert alert-danger validation-summary footer-subscription-failed" ng-if="validation" ng-class="{'d-block' : validation}">
+    <h6 class="alert-heading validation-summary-title footer-subscription-failed-title">
+        <span ng-bind="validation.main"></span>
+    </h6>
+    <ul class="validation-summary-list footer-subscription-failed-list">
+        <li class="validation-summary-item footer-subscription-failed-item" ng-repeat="(key, value) in validation" ng-if="key != 'main'">
+            {{value}}
+        </li>
+    </ul>
+</div>
+							
+							<div class="row no-gutters justify-content-between">
+								<div class="col-md-6 col-xl-3">
+									<div class="pl-md-10 mb-10 mb-xl-0">
+										<input type="text" name="name" ng-model="model.name" class="form-control" placeholder="نام و نام خانوادگی" ng-disabled="progress" required="">
+										<div class="validation-inline footer-subscription-inline-error text-danger" ng-messages="footersubscription.name.$error" ng-show="footersubscription.$submitted || footersubscription.name.$dirty">
+											<span ng-message="required">
+												نام و نام خانوادگی را بنویسید.
+											</span>
+											<span ng-message="server">
+												<span ng-bind="validation.name"></span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-3">
+									<div class="pl-xl-10 mb-10 mb-xl-0">
+										<input type="text" name="email" ng-model="model.email" class="form-control" placeholder="پست الکترونیک" ng-disabled="progress">
+										<div class="validation-inline footer-subscription-inline-error text-danger" ng-messages="footersubscription.email.$error" ng-show="footersubscription.$submitted || footersubscription.email.$dirty">
+											<span ng-message="server">
+												<span ng-bind="validation.email"></span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-3">
+									<div class="pl-md-10 mb-10 mb-xl-0">
+										<input type="text" name="mobile" ng-model="model.mobile" class="form-control" placeholder="شماره موبایل" ng-disabled="progress">
+										<div class="validation-inline footer-subscription-inline-error text-danger" ng-messages="footersubscription.mobile.$error" ng-show="footersubscription.$submitted || footersubscription.mobile.$dirty">
+											<span ng-message="server">
+												<span ng-bind="validation.mobile"></span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-3">
+									<button type="submit" class="btn btn-primary btn-block register-button" ng-disabled="progress">ثبت نام</button>
+								</div>
+								<div class="col-12">
+									<div class="alert alert-success footer-subscription-succeed" ng-show="succeed">
+										<span ng-bind="succeed.description"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer-subscription-loading" ng-show="progress">
+							<i class="fa fa-refresh fa-spin fa-fw"></i>
+							کمی صبر کنید...
+						</div>
+					</form>
+				</div>
+			</div>
+		
+	</div>
+
+
+
+	<div class="teachers-section bg-white py-100">
+		<div class="container">
+			<div class="section-title">
+				<h2 class="section-title-text">برترین خدمات موسسه اردوش</h2>
+			</div>
+			<div class="section-text pt-50">
+				<p><div style="text-align: justify;"><span style="font-size: 20px;">موسسه اردوش به عنوان <span style="color: rgb(184, 49, 47);"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">اولین مرکز آموزشی نوآور مستقر در مراکز رشد و فناوری دانشگاه های کشور </strong></span>, به ارایه خدمات پیشرو در حوزه آموزش برای دانش آموزان در مقاطع مختلف تحصیلی پرداخته است.</span><span style="font-size: 18px;"><br>چشم انداز اصلی موسسه, ارتقای سطح علمی دانش آموزان بر پایه تفکر خلاق و درک بهتر مفاهیم علمی در حیطه ریاضیات و علوم و ... می باشد. </span></div><div style="text-align: justify;"><span style="font-size: 18px;">اين موسسه با هدف &quot;نوآوري هاي آموزشي&quot; علاوه بر فعاليت هاي بين الملي و ارتباط با موسسات خارج از كشور خدمات متنوعی را نیز در حیطه فعالیت های خود گنجانده است.</span></div></p>
+			</div>
+			
+
+			<div class="row mt-5">
+				
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="teachers-section-item">
+							<div class="teachers-section-item-image-container">
+								<div class="teachers-section-item-wall"></div>
+								<div class="teachers-section-item-overlay">
+									<a href="http://erdos.ir/c">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<a href="http://erdos.ir/c"> 
+									<img src='/themes/custom-0c4b/userfiles/53d4c5.png?m=crop&w=400&h=300&q=high' class="teachers-section-item-image" alt="سامانه آموزش مجازی">
+								</a>
+							</div>
+							<div class="teachers-section-item-txt">
+								<div class="teachers-section-item-txt-overlay"></div>
+								<h3 class="teachers-section-item-title">
+									<a href="http://erdos.ir/c" class="teachers-section-item-link">سامانه آموزش مجازی</a>
+								</h3>
+								<p class="teachers-section-item-description"><div style="text-align: justify;"><span style="font-size: 12px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">شرکت در دوره هاي آنلاين موسسه اردوش مي تواند <span style="color: rgb(184, 49, 47);">يه انتخاب درست</span> براي افرادي باشد که به دنبال کلاس هايي با تعداد کم دانش آموز وکيفيت آموزشي بالا و پشتیبانی مستمر &nbsp;هستند.</strong></span></div></p>
+								
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="teachers-section-item">
+							<div class="teachers-section-item-image-container">
+								<div class="teachers-section-item-wall"></div>
+								<div class="teachers-section-item-overlay">
+									<a href="#/erdoscontests/competition">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<a href="#/erdoscontests/competition"> 
+									<img src='/themes/custom-0c4b/userfiles/472a42.jpg?m=crop&w=400&h=300&q=high' class="teachers-section-item-image" alt="برگزاری المپیادهای بین المللی">
+								</a>
+							</div>
+							<div class="teachers-section-item-txt">
+								<div class="teachers-section-item-txt-overlay"></div>
+								<h3 class="teachers-section-item-title">
+									<a href="#/erdoscontests/competition" class="teachers-section-item-link">برگزاری المپیادهای بین المللی</a>
+								</h3>
+								<p class="teachers-section-item-description"><div style="text-align: justify;"><span style="font-size: 12px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">موسسه اردوش در ادامه نوآوری های آموزشی خود ، از سال 1397 اقدام به برگزاری المپیادهای بین المللی ریاضی , علوم , خلاقیت و زبان انگلیسی ...به عنوان نماینده انحصاری در کل کشور نموده است.</strong></span></div></p>
+								
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="teachers-section-item">
+							<div class="teachers-section-item-image-container">
+								<div class="teachers-section-item-wall"></div>
+								<div class="teachers-section-item-overlay">
+									<a href="#">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<a href="#"> 
+									<img src='/themes/custom-0c4b/userfiles/8a460c.png?m=crop&w=400&h=300&q=high' class="teachers-section-item-image" alt="برگزاری آزمون های داخلی">
+								</a>
+							</div>
+							<div class="teachers-section-item-txt">
+								<div class="teachers-section-item-txt-overlay"></div>
+								<h3 class="teachers-section-item-title">
+									<a href="#" class="teachers-section-item-link">برگزاری آزمون های داخلی</a>
+								</h3>
+								<p class="teachers-section-item-description"><div style="text-align: justify;"><span style="font-size: 12px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">آزمون, یک سنگ محک جدی برای افرادی است که هدفی مشخص دارند و می دانند چه می خواهند. موسسه اردوش با بیش از 5سال سابقه درخشان در این زمینه ,کمک شایانی به ارتقای سطح علمی دانش آموزان کرده است.</strong></span></div></p>
+								
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="teachers-section-item">
+							<div class="teachers-section-item-image-container">
+								<div class="teachers-section-item-wall"></div>
+								<div class="teachers-section-item-overlay">
+									<a href="#">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<a href="#"> 
+									<img src='/themes/custom-0c4b/userfiles/02b706.png?m=crop&w=400&h=300&q=high' class="teachers-section-item-image" alt="کمپ های بین المللی">
+								</a>
+							</div>
+							<div class="teachers-section-item-txt">
+								<div class="teachers-section-item-txt-overlay"></div>
+								<h3 class="teachers-section-item-title">
+									<a href="#" class="teachers-section-item-link">کمپ های بین المللی</a>
+								</h3>
+								<p class="teachers-section-item-description"><div style="text-align: justify;"><span style="font-size: 12px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">تاکنون بیش از 100 نفر از دانش آموزان ایرانی منتخب, در کمپ بین المللی کانگورو که تابستان هرسال در کشور ترکیه برگزار می شود شرکت نموده اند.در این کمپ از دانش آموزانی از کشور های ایتالیا وبلغارستان هم شرکت میکنند.</strong></span></div></p>
+								
+							</div>
+						</div>
+					</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="courses-section">
+		<div class="container py-100">
+			<div class="section-title">
+				<h2 class="section-title-text">المپیادها و مسابقات بین المللی</h2>
+			</div>
+			<div class="section-description py-50">
+				<p class="mb-25">
+					
+				</p>
+				
+			</div>
+			<div class="courses-section-items">
+				<div class="row">
+					
+						<div class="col-lg-3 col-sm-6">
+							<div class="courses-section-item mb-50">
+								<div class="courses-section-item-img">
+									<div class="section-item-overlay">
+										<a href="/erdoscontests/competition/sasmoiran">
+											<i class="fa fa-link"></i>
+										</a>
+									</div>
+									<a href="/erdoscontests/competition/sasmoiran">
+										<img src='/themes/custom-0c4b/userfiles/300a9f.png?m=crop&w=400&h=300&q=high' alt="المپیاد ریاضی آسیایی ساسمو  SASMO">
+									</a>
+								</div>
+								<div class="courses-section-item-ttl">
+									<h3>
+										<a href="/erdoscontests/competition/sasmoiran">المپیاد ریاضی آسیایی ساسمو  SASMO </a>
+									</h3>
+									
+								</div>
+								<div class="courses-section-item-txt">
+									<p>آخرین مهلت ثبت نام: 1401/12/15
+									<br><div style="text-align: justify;">این مسابقات یکی از بزرگ&zwnj;ترین و معتبرترین رقابت&zwnj;های ریاضی در سطح آسیا به حساب می&zwnj;آید. در سال(2019)، ایران به عنوان بیست و یکمین کشور آسیایی به این مسابقات پیوست و &nbsp;از آن پس دانش آموزان مستعد ایرانی می توانند به راحتی با دانش آموزان علاقه مند کشورهای دیگر به رقابت بپردازند.</div></p>
+								</div>
+								<div class="courses-section-item-price py-half px-10">
+									مبلغ:
+									<span>480000 تومان</span>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-lg-3 col-sm-6">
+							<div class="courses-section-item mb-50">
+								<div class="courses-section-item-img">
+									<div class="section-item-overlay">
+										<a href="/erdoscontests/competition/vandairan">
+											<i class="fa fa-link"></i>
+										</a>
+									</div>
+									<a href="/erdoscontests/competition/vandairan">
+										<img src='/themes/custom-0c4b/userfiles/57bdca.jpg?m=crop&w=400&h=300&q=high' alt="المپیاد علوم آسیایی وندا VANDA">
+									</a>
+								</div>
+								<div class="courses-section-item-ttl">
+									<h3>
+										<a href="/erdoscontests/competition/vandairan">المپیاد علوم آسیایی وندا VANDA </a>
+									</h3>
+									
+								</div>
+								<div class="courses-section-item-txt">
+									<p>آخرین مهلت ثبت نام: 1401/02/25
+									<br><div style="text-align: justify;">مسابقات علوم وندا هر ساله در نقاط مختلف دنیا برگزار می شود و هدف اصلی آن تسلط آگاهانه دانش آموزان بر اطلاعاتی است که در مباحث علوم پایه تحصیلی مربوطه آنها تدریس می شود به طوریکه بتوانند بر حل تمامی سوالات در همان زمینه اشراف داشته باشند.</div></p>
+								</div>
+								<div class="courses-section-item-price py-half px-10">
+									مبلغ:
+									<span>-------- تومان</span>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-lg-3 col-sm-6">
+							<div class="courses-section-item mb-50">
+								<div class="courses-section-item-img">
+									<div class="section-item-overlay">
+										<a href="/erdoscontests/competition/drctiran">
+											<i class="fa fa-link"></i>
+										</a>
+									</div>
+									<a href="/erdoscontests/competition/drctiran">
+										<img src='/themes/custom-0c4b/userfiles/3eec1e.jpg?m=crop&w=400&h=300&q=high' alt="المپیاد خلاقیت دکتر سی تی DrCT">
+									</a>
+								</div>
+								<div class="courses-section-item-ttl">
+									<h3>
+										<a href="/erdoscontests/competition/drctiran">المپیاد خلاقیت دکتر سی تی DrCT </a>
+									</h3>
+									
+								</div>
+								<div class="courses-section-item-txt">
+									<p>آخرین مهلت ثبت نام: 1400/02/15
+									<br><div style="text-align: justify;">دراین المپیاد مسایل بسیار جالب و آموزنده از خلاقیت و تفکر محاسباتی مطرح می شود. برای پاسخگویی به این سوالات اطلاعات زیادی نیاز نیست و سوالات معماگونه با هدف ارزیابی هوش و خلاقیت و طرز تفکر دانش آموزان است.</div></p>
+								</div>
+								<div class="courses-section-item-price py-half px-10">
+									مبلغ:
+									<span>----- تومان</span>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-lg-3 col-sm-6">
+							<div class="courses-section-item mb-50">
+								<div class="courses-section-item-img">
+									<div class="section-item-overlay">
+										<a href="erdoscontests/competition/erdos-amo2022">
+											<i class="fa fa-link"></i>
+										</a>
+									</div>
+									<a href="erdoscontests/competition/erdos-amo2022">
+										<img src='/themes/custom-0c4b/userfiles/3bc878.jpg?m=crop&w=400&h=300&q=high' alt="المپیاد رياضي دانشگاه ايلينويز (AMO)">
+									</a>
+								</div>
+								<div class="courses-section-item-ttl">
+									<h3>
+										<a href="erdoscontests/competition/erdos-amo2022">المپیاد رياضي دانشگاه ايلينويز (AMO) </a>
+									</h3>
+									
+								</div>
+								<div class="courses-section-item-txt">
+									<p>آخرین مهلت ثبت نام: 1401/06/31
+									<br><div style="text-align: justify;">المپیاد ریاضی دانشگاه ایلینویز (AMO) یک مسابقه بین المللی ریاضی برای دانش آموزان مقاطع ابتدایی و متوسطه است که به تازگی به طور مشترک توسط کمیته مسابقات سنگاپور (SIMCC) و دانشگاه ایلینویز جنوبی آمریکا برگزار می شودو موسسه اردوش نماینده انحصاری برگزاری این رقابت جذاب در ایران است.</div></p>
+								</div>
+								<div class="courses-section-item-price py-half px-10">
+									مبلغ:
+									<span>---- تومان</span>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-lg-3 col-sm-6">
+							<div class="courses-section-item mb-50">
+								<div class="courses-section-item-img">
+									<div class="section-item-overlay">
+										<a href="/erdoscontests/competition/datascienceiran">
+											<i class="fa fa-link"></i>
+										</a>
+									</div>
+									<a href="/erdoscontests/competition/datascienceiran">
+										<img src='/themes/custom-0c4b/userfiles/077c58.jpg?m=crop&w=400&h=300&q=high' alt="المپیاد کامپیوتر (Data Science)">
+									</a>
+								</div>
+								<div class="courses-section-item-ttl">
+									<h3>
+										<a href="/erdoscontests/competition/datascienceiran">المپیاد کامپیوتر (Data Science) </a>
+									</h3>
+									
+								</div>
+								<div class="courses-section-item-txt">
+									<p>آخرین مهلت ثبت نام: ---
+									<br><div style="text-align: justify;">قدرت بی نظیر علم داده در ایجاد تحولات &nbsp;بزرگ در دنیای امروز &nbsp;بر هیچ کس پوشیده نیست. &nbsp;پاسخ به بسیاری از چالش های دنیای امروز در مدل سازی های که توسط علم داده انجام می گیرد نهفته است. این رقابت برای یافتن نخبگانی است که بهترین مدل ها را برای ایجاد زندگی بهتر ارائه می دهند.</div></p>
+								</div>
+								<div class="courses-section-item-price py-half px-10">
+									مبلغ:
+									<span>---- تومان</span>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-lg-3 col-sm-6">
+							<div class="courses-section-item mb-50">
+								<div class="courses-section-item-img">
+									<div class="section-item-overlay">
+										<a href="/erdoscontests/competition/kglenglishcontest">
+											<i class="fa fa-link"></i>
+										</a>
+									</div>
+									<a href="/erdoscontests/competition/kglenglishcontest">
+										<img src='/themes/custom-0c4b/userfiles/fed127.jpg?m=crop&w=400&h=300&q=high' alt="مسابقات بین المللی زبان KGL">
+									</a>
+								</div>
+								<div class="courses-section-item-ttl">
+									<h3>
+										<a href="/erdoscontests/competition/kglenglishcontest">مسابقات بین المللی زبان KGL </a>
+									</h3>
+									
+								</div>
+								<div class="courses-section-item-txt">
+									<p>آخرین مهلت ثبت نام: -
+									<br><div style="text-align: justify;">مسابقه KGL از جمله محبوبترین مسابقات زبان در سطح جهان است که هر ساله به تعداد علاقمندان شرکت در این مسابقه افزوده می شود. تاکنون 70 کشوراز سرارسر دنیا به جامعه بین المللی KGL پیوسته اند و موسسه نوآور اردوش نیز این مسابقات را برای دومین سال در ایران برگزار خواهد کرد.</div></p>
+								</div>
+								<div class="courses-section-item-price py-half px-10">
+									مبلغ:
+									<span>640000 تومان</span>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-lg-3 col-sm-6">
+							<div class="courses-section-item mb-50">
+								<div class="courses-section-item-img">
+									<div class="section-item-overlay">
+										<a href="http://erdos.ir/ec/final-competition-steam-ahead/simociran2023">
+											<i class="fa fa-link"></i>
+										</a>
+									</div>
+									<a href="http://erdos.ir/ec/final-competition-steam-ahead/simociran2023">
+										<img src='/themes/custom-0c4b/userfiles/feab46.png?m=crop&w=400&h=300&q=high' alt="المپیاد ریاضی سنگاپور SIMOC">
+									</a>
+								</div>
+								<div class="courses-section-item-ttl">
+									<h3>
+										<a href="http://erdos.ir/ec/final-competition-steam-ahead/simociran2023">المپیاد ریاضی سنگاپور SIMOC </a>
+									</h3>
+									
+								</div>
+								<div class="courses-section-item-txt">
+									<p>آخرین مهلت ثبت نام: 1402/03/02
+									<br><div style="text-align: justify;">تمامی دارندگان <span style="color: rgb(184, 49, 47);">مدال های طلا و نقره و برنز المپیاد SASMO 2023 و المپیاد AMO 2022 ,</span> جواز شرکت در مسابقات المپیاد بین المللی ریاضی سنگاپور را دارند. این المپیاد برای دانش اموزان پایه 2 تا 12 بطور همزمان در 38 کشور &nbsp;در دو مرحله انفرادی وگروهی برگزار می شود.</div></p>
+								</div>
+								<div class="courses-section-item-price py-half px-10">
+									مبلغ:
+									<span>---- تومان</span>
+								</div>
+							</div>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="courses-section">
+		<div class="container py-100">
+			<div class="section-title">
+				<h2 class="section-title-text">دوره های آموزش مجازی اردوش</h2>
+			</div>
+			<div class="section-description py-50">
+				<p class="mb-25">
+					<div style="text-align: justify;"><span style="font-size: 18px; font-family: Samim;"><span style="color: rgb(184, 49, 47);">انتخاب درست</span> دوره های آموزش آنلاين درکنار صرفه جويي در وقت و هزينه ميتواند با ايجاد ارتباط دوطرفه و تعاملی, شرايطي همانند کلاس هاي حضوري را براي دانش آموز فراهم آورد.</span></div><div style="text-align: justify;"><span style="font-size: 18px; font-family: Samim;"><span style="color: rgb(184, 49, 47);">انتخاب درست </span>شامل ثبت نام در دوره هايي با تعداد دانش آموز محدود مي باشد چرا که تعداد بالاي شرکت کنندگان دريک کلاس عملا شرايط پرسش و پاسخ را بي اثر کرده و فرقي با آموزش از طريق سي دي نخواهد داشت.</span></div><div style="text-align: justify;"><span style="font-size: 18px; font-family: Samim;"><span style="color: rgb(184, 49, 47);"><strong style="font-weight: 700;">شرکت در دوره هاي آنلاين موسسه اردوش</strong></span> مي تواند يه انتخاب درست براي افرادي باشد که به دنبال کلاس هايي با تعداد محدود دانش اموز وکيفيت آموزشي بالا و پشتیبانی مستمر هستند. </span></div>
+				</p>
+				
+			</div>
+			<div class="courses-section-items">
+				<div class="row">
+					
+						<div class="col-lg-3 col-sm-6">
+							<div class="courses-section-item mb-50">
+								<div class="courses-section-item-img">
+									<div class="section-item-overlay">
+										<a href="http://erdos.ir/c/class/pclasses-1402">
+											<i class="fa fa-link"></i>
+										</a>
+									</div>
+									<a href="http://erdos.ir/c/class/pclasses-1402">
+										<img src='/themes/custom-0c4b/userfiles/5810a3.png?m=crop&w=400&h=300&q=high' alt="دوره های هوش و حل مسئله ابتدایی">
+									</a>
+								</div>
+								<div class="courses-section-item-ttl">
+									<h3>
+										<a href="http://erdos.ir/c/class/pclasses-1402">دوره های هوش و حل مسئله ابتدایی </a>
+									</h3>
+									
+								</div>
+								<div class="courses-section-item-txt">
+									<p>آخرین مهلت ثبت نام: 1402/03/01
+									<br><div style="text-align: center;"><span style="font-size: 20px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">ثبت نام دوره های ترم تابستان</strong></span></div><div style="text-align: center;"><span style="font-size: 14px; color: rgb(184, 49, 47);"><strong>کلاس های ترمیک آنلاین پایه اول تا پنجم</strong></span></div><div style="text-align: center;"><span style="font-size: 14px; color: rgb(184, 49, 47);"><strong>ویژه آمادگی المپیاد های بین المللی</strong></span></div></p>
+								</div>
+								<div class="courses-section-item-price py-half px-10">
+									مبلغ:
+									<span>880000تا 960000 تومان</span>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-lg-3 col-sm-6">
+							<div class="courses-section-item mb-50">
+								<div class="courses-section-item-img">
+									<div class="section-item-overlay">
+										<a href="http://erdos.ir/c/class/sclasses-1402">
+											<i class="fa fa-link"></i>
+										</a>
+									</div>
+									<a href="http://erdos.ir/c/class/sclasses-1402">
+										<img src='/themes/custom-0c4b/userfiles/0a2114.png?m=crop&w=400&h=300&q=high' alt="دوره علوم پیشرفته ابتدایی و متوسطه">
+									</a>
+								</div>
+								<div class="courses-section-item-ttl">
+									<h3>
+										<a href="http://erdos.ir/c/class/sclasses-1402">دوره علوم پیشرفته ابتدایی و متوسطه </a>
+									</h3>
+									
+								</div>
+								<div class="courses-section-item-txt">
+									<p>آخرین مهلت ثبت نام: 1402/03/01
+									<br><div style="text-align: center;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 20px;">ثبت نام دوره های ترم تابستان&nbsp;</span></strong></div><div style="text-align: center;"><span style="font-size: 14px; color: rgb(243, 121, 52);"><strong>کلاس های ترمیک آنلاین پایه سوم تا دهم</strong></span></div><div style="text-align: center;"><span style="font-size: 14px; color: rgb(243, 121, 52);"><strong>ویژه آمادگی المپیاد های بین المللی</strong></span></div></p>
+								</div>
+								<div class="courses-section-item-price py-half px-10">
+									مبلغ:
+									<span>960000 تومان</span>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-lg-3 col-sm-6">
+							<div class="courses-section-item mb-50">
+								<div class="courses-section-item-img">
+									<div class="section-item-overlay">
+										<a href="http://erdos.ir/c/class/mclass1402">
+											<i class="fa fa-link"></i>
+										</a>
+									</div>
+									<a href="http://erdos.ir/c/class/mclass1402">
+										<img src='/themes/custom-0c4b/userfiles/071093.png?m=crop&w=400&h=300&q=high' alt="دوره های پیشرفته ریاضی متوسطه">
+									</a>
+								</div>
+								<div class="courses-section-item-ttl">
+									<h3>
+										<a href="http://erdos.ir/c/class/mclass1402">دوره های پیشرفته ریاضی متوسطه </a>
+									</h3>
+									
+								</div>
+								<div class="courses-section-item-txt">
+									<p>آخرین مهلت ثبت نام: 1402/03/01
+									<br><div style="text-align: center;"><span style="font-size: 20px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">ثبت نام دوره های ترم تابستان</strong></span></div><div style="text-align: center;"><span style="color: rgb(0, 168, 133);"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 14px;">ویژه آمادگی المپیاد های ملی </span></strong></span></div><div style="text-align: center;"><span style="color: rgb(0, 168, 133);"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 14px;">پایه هفتم تا یازدهم </span></strong></span></div></p>
+								</div>
+								<div class="courses-section-item-price py-half px-10">
+									مبلغ:
+									<span>960000 تومان</span>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-lg-3 col-sm-6">
+							<div class="courses-section-item mb-50">
+								<div class="courses-section-item-img">
+									<div class="section-item-overlay">
+										<a href="http://erdos.ir/c/class/tclasses-1402">
+											<i class="fa fa-link"></i>
+										</a>
+									</div>
+									<a href="http://erdos.ir/c/class/tclasses-1402">
+										<img src='/themes/custom-0c4b/userfiles/ac4e54.png?m=crop&w=400&h=300&q=high' alt="دوره های ویژه آمادگی تیزهوشان">
+									</a>
+								</div>
+								<div class="courses-section-item-ttl">
+									<h3>
+										<a href="http://erdos.ir/c/class/tclasses-1402">دوره های ویژه آمادگی تیزهوشان </a>
+									</h3>
+									
+								</div>
+								<div class="courses-section-item-txt">
+									<p>آخرین مهلت ثبت نام: 1402/03/01
+									<br><div style="text-align: center;"><span style="color: rgb(0, 0, 0);"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 20px;">ثبت نام دوره های ترم تابستان</span></strong></span></div><div style="text-align: center;"><strong><span style="color: rgb(184, 49, 47);">&nbsp;هوش ریاضی - هوش کلامی - استعداد تحلیلی</span></strong></div><div style="text-align: center;"><strong><span style="color: rgb(184, 49, 47);">سه کلاس 8 جلسه ای به صورت آنلاین</span></strong></div></p>
+								</div>
+								<div class="courses-section-item-price py-half px-10">
+									مبلغ:
+									<span>960000 تومان</span>
+								</div>
+							</div>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="why-us-section bg-white py-100">
+		<div class="container">
+			<div class="section-title mb-50">
+				<h2 class="section-title-text">چرا موسسه اردوش؟</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-5 col-sm-12">
+					<div class="section-description mb-40 mb-lg-0">
+						<p><div style="text-align: justify;">یادگیری رو باید یک فرآیند تلقی کنیم، فرآیندی که در اون مهارت های شما بعد از یادگیری تغییر پیدا می کند. اجرای این فرآیند نیاز به ملزومات مختلفی داره، رسالت ما اجرای درست و دقیق فرآیند یادگیری است.</div><div style="text-align: justify;">اینجا همه چی کنار هم جمع شده تا تو یادبگیری و مهارت لازم رو کسب کنی، اساتید حرفه ای، سیستمهای آموزش الکترونیکی پیشرفته، تیم پشتیبانی حرفه ای ....;</div><div style="text-align: center;"><span style="color: rgb(40, 50, 78);"><strong style="font-weight: 700;"><span style="font-size: 24px;"><em><span style="font-family: IranYekanWeb;">با هم و قدرتمند شروع خواهیم کرد</span></em></span></strong></span></div><div style="text-align: justify;"><span style="font-size: 18px; color: rgb(184, 49, 47);"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">صرفه جویی در زمان</strong></span></div><div style="text-align: justify;">با آموزش مجازی شما محدودیتی در زمان آموزش نخواهید داشت و هر زمان که برای شما مناسب باشد می توانید در یک دوره آموزشی شرکت کنید.</div><div style="text-align: justify;"><span style="font-size: 18px; color: rgb(184, 49, 47);"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">آموزش از هر مکان</strong></span></div><div style="text-align: justify;">برای شرکت در دوره های آموزشی تنها کافی است در هر کجا که باشید به اینترنت متصل شوید و بسیاری از محدودیتهای جغرافیایی را حذف کنید.</div><div style="text-align: justify;"><span style="font-size: 18px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="color: rgb(184, 49, 47);">ابزارهای آموزشی نوین</span></strong></span></div><div style="text-align: justify;">در آموزش مجازی ابزارهای آموزشی مختلف و پیشرفته ای برای برگزاری دوره های آموزشی و انتقال مفاهیم مختلف به کارآموزان مورد استفاده قرار می گیرد.</div><div style="text-align: justify;"><span style="color: rgb(184, 49, 47); font-size: 18px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">کسب مهارتهای بیشتر</strong></span></div><div style="text-align: justify;">مجموع قابلیتهای مختلف آموزش مجازی در کنار سایر مزایای آن منجر به ارتقاء کیفی مهارتهای شما می گردد و آموزشی مداوم را به ارمغان خواهد آورد.</div><div style="text-align: center;"><span style="font-size: 22px;"><em><strong style="font-weight: 700;"><span style="font-family: IranYekanWeb;"> <span style="color: rgb(40, 50, 78);">برای اینکه می خواهیم بهترین خودت باشی</span></span></strong></em></span></div></p>
+						
+					</div>
+				</div>
+				<div class="col-lg-7 col-sm-12">
+					<div class="row">
+						
+							<div class="col-sm-6">
+								<div class="why-us-section-item mb-30">
+									<h3 class="why-us-section-item-title">
+										<i class="fa fa-check why-us-section-item-icon"></i> تیمی از متخصصین دانشگاهی </h3>
+									<p class="why-us-section-item-description"><div style="text-align: justify;"><img src="/themes/custom-0c4b/userfiles/158a89.png" style="display: block; vertical-align: top; margin: 5px auto; cursor: pointer; position: relative; max-width: 100%;" fr-original-style="display: block; vertical-align: top; margin: 5px auto;" fr-original-class="fr-draggable"></div></p>
+									
+								</div>
+							</div>
+						
+							<div class="col-sm-6">
+								<div class="why-us-section-item mb-30">
+									<h3 class="why-us-section-item-title">
+										<i class="fa fa-check why-us-section-item-icon"></i> خدمات چند جانبه وفراگیر </h3>
+									<p class="why-us-section-item-description"><img src="/themes/custom-0c4b/userfiles/c61953.png" style="display: block; vertical-align: top; margin: 5px auto; cursor: pointer; position: relative; max-width: 100%;" fr-original-style="display: block; vertical-align: top; margin: 5px auto;" fr-original-class="fr-draggable"></p>
+									
+								</div>
+							</div>
+						
+							<div class="col-sm-6">
+								<div class="why-us-section-item mb-30">
+									<h3 class="why-us-section-item-title">
+										<i class="fa fa-check why-us-section-item-icon"></i> زیربنای تحقیقاتی قوی </h3>
+									<p class="why-us-section-item-description"><img src="/themes/custom-0c4b/userfiles/8d190b.png" style="display: block; vertical-align: top; margin: 5px auto; cursor: pointer; position: relative; max-width: 100%;" fr-original-style="display: block; vertical-align: top; margin: 5px auto;" fr-original-class="fr-draggable"></p>
+									
+								</div>
+							</div>
+						
+							<div class="col-sm-6">
+								<div class="why-us-section-item mb-30">
+									<h3 class="why-us-section-item-title">
+										<i class="fa fa-check why-us-section-item-icon"></i> رزومه قوی و جامعه بزرگ مشتریان </h3>
+									<p class="why-us-section-item-description"><img src="/themes/custom-0c4b/userfiles/ce544f.png" style="display: block; vertical-align: top; margin: 5px auto; cursor: pointer; position: relative; max-width: 100%;" fr-original-style="display: block; vertical-align: top; margin: 5px auto;" fr-original-class="fr-draggable"></p>
+									
+								</div>
+							</div>
+						
+							<div class="col-sm-6">
+								<div class="why-us-section-item mb-30">
+									<h3 class="why-us-section-item-title">
+										<i class="fa fa-check why-us-section-item-icon"></i> گستره همکاران موسسه </h3>
+									<p class="why-us-section-item-description"><img src="/themes/custom-0c4b/userfiles/f3fd26.png" style="display: block; vertical-align: top; margin: 5px auto; cursor: pointer; position: relative; max-width: 100%;" fr-original-style="display: block; vertical-align: top; margin: 5px auto;" fr-original-class="fr-draggable"></p>
+									
+								</div>
+							</div>
+						
+							<div class="col-sm-6">
+								<div class="why-us-section-item mb-30">
+									<h3 class="why-us-section-item-title">
+										<i class="fa fa-check why-us-section-item-icon"></i> سهولت و انعطاف در کاربرد </h3>
+									<p class="why-us-section-item-description"><img src="/themes/custom-0c4b/userfiles/3820fb.png" style="display: block; vertical-align: top; margin: 5px auto; cursor: pointer; position: relative; max-width: 100%;" fr-original-style="display: block; vertical-align: top; margin: 5px auto;" fr-original-class="fr-draggable"></p>
+									
+								</div>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="class-table-section py-100">
+		<div class="container">
+			<div class="section-title">
+				<h2 class="section-title-text">تقویم برگزاری مسابقات بین المللی</h2>
+			</div>
+			<div class="section-description py-50">
+				<p><div style="text-align: justify;"><span style="font-size: 24px; font-family: Vazir;">اطلاعات کامل در مورد <strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="color: rgb(184, 49, 47);">زمان ثبت نام و برگزاری مسابقات بین المللی</span></strong> رو از جدول زیر می تونی ببینی.</span></div></p>
+				
+			</div>
+			<div class="class-table-section-days-tabs">
+				<ul class="nav nav-tabs" id="scheduleTabs" role="tablist">
+					
+						<li class="nav-item">
+							<a class="nav-link" href="#tab111396015" role="tab" data-toggle="tab">المپیادهای ریاضی</a>
+						</li>
+					
+						<li class="nav-item">
+							<a class="nav-link" href="#tab111396016" role="tab" data-toggle="tab">المپیاد علوم</a>
+						</li>
+					
+						<li class="nav-item">
+							<a class="nav-link" href="#tab111396017" role="tab" data-toggle="tab">مسابقات زبان انگلیسی</a>
+						</li>
+					
+						<li class="nav-item">
+							<a class="nav-link" href="#tab111396018" role="tab" data-toggle="tab">المپیاد علوم کامپیوتر</a>
+						</li>
+					
+				</ul>
+			</div>
+
+			<div class="class-table-section-tabcontent">
+				<div class="tab-content" id="scheduleTabsContent">
+					
+						<div role="tabpanel" class="tab-pane" id="tab111396015">
+							<div class="section-table section-table-responsive">
+								<div style="text-align: justify;"><img src="http://erdos.ir/uploads/editor/8be9aa.jpg" style="cursor: pointer; position: relative; max-width: 100%; width: 300px; height: 200px;" fr-original-style="cursor: pointer; position: relative; max-width: 100%; width: 300px; height: 200px;" fr-original-class="fr-draggable">هرچه از پایین هرم به سمت بالاحرکت کنیم, اعتبار مسابقات و میزان چالشی بودن سوالات , بالاتر خواهد بود.</div><table border="0" cellpadding="0" cellspacing="0" dir="RTL" fr-original-style="width: 100%;" style="width: 100%; border: 0px; border-collapse: collapse; empty-cells: show; max-width: 100%;" width="1174"><tbody><tr fr-original-style="user-select: none;" style="user-select: none;"><td dir="RTL" fr-original-class="xl78" fr-original-style='color:black;font-size:19px;font-family:"B Bardiya";text-align:center;vertical-align:middle;background:#00B0F0;height:29.25pt;width:234pt;' height="39" style='color: black; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(0, 176, 240); height: 29.25pt; width: 234pt; user-select: text; border: 1px solid rgb(221, 221, 221);' width="26.57580919931857%">عنوان<br></td><td dir="RTL" fr-original-class="xl78" fr-original-style='color:black;font-size:19px;font-family:"B Bardiya";text-align:center;vertical-align:middle;background:#00B0F0;width:426pt;' style='color: black; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(0, 176, 240); width: 426pt; user-select: text; border: 1px solid rgb(221, 221, 221);' width="48.38160136286201%">توضیحات<br></td><td dir="RTL" fr-original-class="xl78" fr-original-style='color:black;font-size:19px;font-family:"B Bardiya";text-align:center;vertical-align:middle;background:#00B0F0;width:106pt;' style='color: black; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(0, 176, 240); width: 106pt; user-select: text; border: 1px solid rgb(221, 221, 221);' width="12.010221465076661%">زمان شروع ثبت نام<br></td><td dir="RTL" fr-original-class="xl78" fr-original-style='color:black;font-size:19px;font-family:"B Bardiya";text-align:center;vertical-align:middle;background:#00B0F0;width:115pt;' style='color: black; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(0, 176, 240); width: 115pt; user-select: text; border: 1px solid rgb(221, 221, 221);' width="13.03236797274276%">زمان برگزاری<br></td></tr><tr fr-original-style="user-select: none;" style="user-select: none;"><td dir="RTL" fr-original-class="xl65 " fr-original-style='color: black; font-size: 24px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 204, 102); height: 56.25pt; width: 28.4123%;' height="75" style='color: black; font-size: 24px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 204, 102); height: 56.25pt; width: 28.4123%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 24px;">المپیاد بین المللی ریاضی &nbsp;ساسمو<br>(SASMO)</span></strong><br></td><td dir="RTL" fr-original-class="xl66" fr-original-style='color: rgb(51, 51, 51); font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: rgb(255, 204, 102); width: 41.922%;' style='color: rgb(51, 51, 51); font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: rgb(255, 204, 102); width: 41.922%; user-select: text; border: 1px solid rgb(221, 221, 221);'><div style="text-align: justify;"><span style="font-size: 18px;"><strong>شرکت در یکی از معتبرترین المپیاد دانش آموزی در آسیا و جهان.</strong></span></div><div style="text-align: justify;"><span style="font-size: 18px;"><strong>با بیش از <span style="color: rgb(184, 49, 47);">2000 شرکت کننده از ایران</span> و نزدیک به <span style="color: rgb(184, 49, 47);">45000 نفر از کل دنیا.</span><br>همه دانش آموزان<span style="color: rgb(184, 49, 47);">&nbsp;پایه اول تا دوازدهم</span> می تونن خودشون رو در یک رقابت بین المللی معتبر محک بزنن.</strong></span></div></td><td dir="RTL" fr-original-class="xl81" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 204, 102); width: 13.2312%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 204, 102); width: 13.2312%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">دی ماه <br>(هر سال)</strong><br></td><td dir="RTL" fr-original-class="xl81" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 204, 102); width: 16.2953%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 204, 102); width: 16.2953%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">فروردین ماه <br>(هرسال)</strong><br></td></tr><tr fr-original-style="user-select: none;" style="user-select: none;"><td dir="RTL" fr-original-class="xl69" fr-original-style='color: black; font-size: 24px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 204, 0); height: 35.1pt; width: 28.4123%;' height="46" style='color: black; font-size: 24px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 204, 0); height: 35.1pt; width: 28.4123%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">المپیاد &nbsp; ریاضی دانشگاه ایلینویز جنوبی</strong><br><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">(AMO)</strong><br></td><td dir="RTL" fr-original-class="xl70" fr-original-style='color: rgb(51, 51, 51); font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: rgb(255, 204, 0); width: 41.922%;' style='color: rgb(51, 51, 51); font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: rgb(255, 204, 0); width: 41.922%; user-select: text; border: 1px solid rgb(221, 221, 221);'><div style="text-align: justify;"><span style="font-size: 18px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">شرکت دراین المپیاد جذاب برای همه دانش آموزان <span style="color: rgb(184, 49, 47);">پایه اول تا دوازدهم </span>آزاد هست.</strong></span></div><div style="text-align: justify;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 18px;">هر دانش آموزی می تونه به راحتی دراین رقابت بین المللی با اعتبار بالا شرکت کنه.</span><span style="font-size: 20px;">&nbsp;</span></strong></div></td><td dir="RTL" fr-original-class="xl71" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 204, 0); width: 13.2312%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 204, 0); width: 13.2312%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">شهریور ماه <br>(هر سال)</strong><br></td><td dir="RTL" fr-original-class="xl71" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 204, 0); width: 16.2953%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 204, 0); width: 16.2953%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">آبان ماه <br>(هرسال)</strong><br></td></tr><tr fr-original-style="user-select: none;" style="user-select: none;"><td dir="RTL" fr-original-class="xl74" fr-original-style='color:black;font-size:24px;font-family:"B Nazanin";text-align:center;vertical-align:middle;background:#FF9966;height:70.2pt;' height="92" style='color: black; font-size: 24px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 153, 102); height: 70.2pt; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">المپیاد ریاضی سنگاپور (SIMOC)</strong><br></td><td dir="RTL" fr-original-class="xl75" fr-original-style='color: rgb(51, 51, 51); font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: rgb(255, 153, 102); width: 41.922%;' style='color: rgb(51, 51, 51); font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: rgb(255, 153, 102); width: 41.922%; user-select: text; border: 1px solid rgb(221, 221, 221);'><div style="text-align: justify;"><span style="font-size: 18px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">مدال آوران <span style="color: rgb(184, 49, 47);">طلا و نقره و برنز مسابقات SASMO و AMO</span> جواز شرکت در این المپیاد را &nbsp; کسب می کنند.</strong></span></div><div style="text-align: justify;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 18px;">این المپیاد در <span style="color: rgb(184, 49, 47);">دو مرحله انفرادی و گروهی</span> برگزار می شود.</span></strong></div></td><td dir="RTL" fr-original-class="xl76" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 153, 102); width: 13.2312%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 153, 102); width: 13.2312%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">خرداد ماه <br>(هر سال)</strong><br></td><td dir="RTL" fr-original-class="xl76" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 153, 102); width: 16.2953%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 153, 102); width: 16.2953%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">&nbsp;اواخرتیرماه <br>(هرسال)</strong><br></td></tr><tr fr-original-style="user-select: none;" style="user-select: none;"><td dir="RTL" fr-original-class="xl72" fr-original-style='color:black;font-size:24px;font-family:"B Nazanin";text-align:center;vertical-align:middle;background:#FF9933;height:70.2pt;' height="92" style='color: black; font-size: 24px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 153, 51); height: 70.2pt; user-select: text; border: 1px solid rgb(221, 221, 221);'><span style="font-size: 24px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">المپیاد نوجوانان آسیا (IJMO)</strong></span><br></td><td align="right" dir="RTL" fr-original-class="xl77" fr-original-style='color: rgb(51, 51, 51); font-size: 16px; font-family: "B Nazanin"; vertical-align: middle; background: rgb(255, 153, 51); width: 41.922%;' style='color: rgb(51, 51, 51); font-size: 16px; font-family: "B Nazanin"; vertical-align: middle; background: rgb(255, 153, 51); width: 41.922%; user-select: text; border: 1px solid rgb(221, 221, 221);'><div style="text-align: justify;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 18px; color: rgb(184, 49, 47);">تنها مدال آوران طلا و نقره المپیاد &nbsp; SASMO, &nbsp;AMO و مدال آوران طلا و نقره و برنز المپیاد SIMOC </span></strong></div><div style="text-align: justify;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 18px;">جواز شرکت در فینال مسابقات یعنی المپیاد نوجوانان آسیا (IJMO) را خواهند داشت.</span></strong></div></td><td dir="RTL" fr-original-class="xl73" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 153, 51); width: 13.2312%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 153, 51); width: 13.2312%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">مهر ماه <br>(هر سال)</strong><br></td><td dir="RTL" fr-original-class="xl73" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 153, 51); width: 16.2953%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(255, 153, 51); width: 16.2953%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">آذر ماه <br>(هرسال)</strong><br></td></tr></tbody></table><div style="text-align: center;"><img src="/themes/custom-0c4b/userfiles/ffa441.png" style="display: block; vertical-align: top; margin: 5px auto;" fr-original-style="display: block; vertical-align: top; margin: 5px auto;" fr-original-class="fr-draggable"></div>
+							</div>
+							
+						</div>
+					
+						<div role="tabpanel" class="tab-pane" id="tab111396016">
+							<div class="section-table section-table-responsive">
+								<table border="0" cellpadding="0" cellspacing="0" dir="RTL" fr-original-style="width: 100%;" style="width: 100%; border: 0px; border-collapse: collapse; empty-cells: show; max-width: 100%;" width="1114"><tbody><tr style="user-select: none;"><td dir="RTL" fr-original-class="xl71" fr-original-style='color:white;font-size:19px;font-family:"B Bardiya";text-align:center;vertical-align:middle;background:#CC3399;height:29.25pt;width:234pt;' height="39" style='color: white; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(204, 51, 153); height: 29.25pt; width: 234pt; user-select: none; border: 1px solid rgb(221, 221, 221);' width="28.00718132854578%">عنوان <br></td><td dir="RTL" fr-original-class="xl71" fr-original-style='color:white;font-size:19px;font-family:"B Bardiya";text-align:center;vertical-align:middle;background:#CC3399;width:381pt;' style='color: white; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(204, 51, 153); width: 381pt; user-select: none; border: 1px solid rgb(221, 221, 221);' width="45.601436265709154%">توضیحات<br></td><td dir="RTL" fr-original-class="xl71" fr-original-style='color:white;font-size:19px;font-family:"B Bardiya";text-align:center;vertical-align:middle;background:#CC3399;width:106pt;' style='color: white; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(204, 51, 153); width: 106pt; user-select: none; border: 1px solid rgb(221, 221, 221);' width="12.657091561938959%">زمان شروع ثبت نام<br></td><td dir="RTL" fr-original-class="xl71" fr-original-style='color:white;font-size:19px;font-family:"B Bardiya";text-align:center;vertical-align:middle;background:#CC3399;width:115pt;' style='color: white; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(204, 51, 153); width: 115pt; user-select: none; border: 1px solid rgb(221, 221, 221);' width="13.734290843806104%">زمان برگزاری<br></td></tr><tr style="user-select: none;"><td dir="RTL" fr-original-class="xl65" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(204, 255, 204); height: 24.95pt; width: 28.273%;' height="33" style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(204, 255, 204); height: 24.95pt; width: 28.273%; user-select: none; border: 1px solid rgb(221, 221, 221);'><strong style="font-weight: 700;"><span style="font-size: 22px;">المپیاد علوم آسیایی <br>(VANDA)</span></strong><br></td><td align="right" dir="RTL" fr-original-class="xl66" fr-original-style='color: black; font-size: 16px; font-family: "B Nazanin"; vertical-align: middle; background: rgb(204, 255, 204); width: 42.0613%;' style='color: black; font-size: 16px; font-family: "B Nazanin"; vertical-align: middle; background: rgb(204, 255, 204); width: 42.0613%; user-select: none; border: 1px solid rgb(221, 221, 221);'><div style="text-align: justify;"><span style="font-size: 18px;"><strong style="font-weight: 700;">المپیاد منحصر به فرد با اعتبار بالای جهانی مختص دانش آموزان پایه سوم تا دهم .</strong></span></div><div style="text-align: justify;"><span style="font-size: 18px;"><strong style="font-weight: 700;">تمامی <span style="color: rgb(184, 49, 47);">مدال آوران مرحله اول</span> جواز شرکت در فینال این رقابت جذاب را خواهند داشت.</strong></span></div></td><td dir="RTL" fr-original-class="xl67" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(204, 255, 204); width: 13.649%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(204, 255, 204); width: 13.649%; user-select: none; border: 1px solid rgb(221, 221, 221);'><strong style="font-weight: 700;">دی ماه <br>(هر سال)</strong><br></td><td dir="RTL" fr-original-class="xl67" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(204, 255, 204); width: 15.7382%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(204, 255, 204); width: 15.7382%; user-select: none; border: 1px solid rgb(221, 221, 221);'><strong style="font-weight: 700;">فروردین ماه <br>(هرسال)</strong><br></td></tr><tr style="user-select: none;"><td dir="RTL" fr-original-class="xl72" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(204, 255, 153); height: 37.5pt; width: 28.4123%;' height="50" style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(204, 255, 153); height: 37.5pt; width: 28.4123%; user-select: none; border: 1px solid rgb(221, 221, 221);'><strong style="font-weight: 700;"><span style="font-size: 24px;">المپیاد جهانی علوم<br>(VANDA FINAL)</span></strong><br></td><td dir="LTR" fr-original-class="xl73" fr-original-style='color: black; font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: rgb(204, 255, 153); width: 42.2006%;' style='color: black; font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: rgb(204, 255, 153); width: 42.2006%; user-select: none; border: 1px solid rgb(221, 221, 221);'><div>.ی<strong style="font-weight: 700;"><span style="font-size: 18px;">ک &nbsp; المپیاد بين المللی علمی در زمینه علوم پیشرفته است که هر ساله در سراسر جهان &nbsp; برگزار می شود</span></strong></div><div><strong style="font-weight: 700;"><span style="font-size: 18px;"><span style="color: rgb(184, 49, 47);">مدال آوران &nbsp;طلا و نقره و برنز مرحله &nbsp;اول المپیاد علوم وندا </span>جواز شرکت در این رقابت را &nbsp; دارند</span></strong></div></td><td dir="RTL" fr-original-class="xl74" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(204, 255, 153); width: 13.649%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(204, 255, 153); width: 13.649%; user-select: none; border: 1px solid rgb(221, 221, 221);'><strong style="font-weight: 700;"><span style="font-size: 20px;">دی ماه <br>(هر سال)</span></strong><br></td><td dir="RTL" fr-original-class="xl74" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(204, 255, 153); width: 15.7382%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(204, 255, 153); width: 15.7382%; user-select: none; border: 1px solid rgb(221, 221, 221);'><strong style="font-weight: 700;">فروردین ماه <br>(هرسال)</strong><br></td></tr></tbody></table><a href="http://erdos.ir/erdoscontests/competition" style="user-select: auto;"><img src="/themes/custom-0c4b/userfiles/6933f1.png" style="display: block; vertical-align: top; margin: 5px auto; cursor: pointer; position: relative; max-width: 100%;" fr-original-style="display: block; vertical-align: top; margin: 5px auto;" fr-original-class="fr-draggable"></a><br>
+							</div>
+							
+						</div>
+					
+						<div role="tabpanel" class="tab-pane" id="tab111396017">
+							<div class="section-table section-table-responsive">
+								<table border="0" cellpadding="0" cellspacing="0" dir="RTL" fr-original-style="width: 100%;" style="width: 100%; border: 0px; border-collapse: collapse; empty-cells: show; max-width: 100%;" width="1053"><tbody><tr fr-original-style="user-select: none;" style="user-select: none;"><td dir="RTL" fr-original-class="xl65" fr-original-style='color: white; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(84, 130, 53); height: 29.25pt; width: 29.6799%;' height="39" style='color: white; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(84, 130, 53); height: 29.25pt; width: 29.6799%; user-select: text; border: 1px solid rgb(221, 221, 221);' width="29.62962962962963%">عنوان<br></td><td dir="RTL" fr-original-class="xl65" fr-original-style='color: white; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(84, 130, 53); width: 39.5402%;' style='color: white; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(84, 130, 53); width: 39.5402%; user-select: text; border: 1px solid rgb(221, 221, 221);' width="42.45014245014245%">توضیحات<br></td><td dir="RTL" fr-original-class="xl65" fr-original-style='color:white;font-size:19px;font-family:"B Bardiya";text-align:center;vertical-align:middle;background:#548235;width:106pt;' style='color: white; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(84, 130, 53); width: 106pt; user-select: text; border: 1px solid rgb(221, 221, 221);' width="13.39031339031339%">زمان شروع ثبت نام<br></td><td dir="RTL" fr-original-class="xl65" fr-original-style='color:white;font-size:19px;font-family:"B Bardiya";text-align:center;vertical-align:middle;background:#548235;width:115pt;' style='color: white; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(84, 130, 53); width: 115pt; user-select: text; border: 1px solid rgb(221, 221, 221);' width="14.52991452991453%">زمان برگزاری<br></td></tr><tr fr-original-style="user-select: none;" style="user-select: none;"><td dir="RTL" fr-original-class="xl73" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: yellow; height: 75pt; width: 29.6799%;' height="100" style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: yellow; height: 75pt; width: 29.6799%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 24px;">مسابقه بین المللی زبان انگلیسی<br>(KGL)</span></strong><br></td><td dir="RTL" fr-original-class="xl66" fr-original-style='color: black; font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: yellow; width: 39.5402%;' style='color: black; font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: yellow; width: 39.5402%; user-select: text; border: 1px solid rgb(221, 221, 221);'><div style="text-align: justify;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 18px;">با بیش &nbsp; از 70 کشور شرکت کننده غیر انگلیسی زبان با اعتبار بالای جهانی </span></strong></div><div style="text-align: justify;"><span style="font-size: 18px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">مختص دانش آموزان7 تا17 سال در 5 سطح PREA1-A1-A2-B1-B2</strong></span></div><div style="text-align: justify;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 18px;">&nbsp;در سه مرحله , که مرحله اول و دوم کشوری و &nbsp;مرحله نهایی به صورت جهانی در یک کشور اروپایی برگزار می شود.</span></strong></div></td><td dir="RTL" fr-original-class="xl71" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: bottom; background: yellow; width: 14.2061%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: bottom; background: yellow; width: 14.2061%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 20px;">آذر ماه<br>(هر سال)</span></strong><br></td><td dir="RTL" fr-original-class="xl71" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: bottom; background: yellow; width: 16.2953%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: bottom; background: yellow; width: 16.2953%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 20px;">بهمن ماه<br>(هرسال)</span></strong><br></td></tr></tbody></table><a href="http://erdos.ir/erdoscontests/competition/kglenglishcontest" style="user-select: auto;"><img src="/themes/custom-0c4b/userfiles/75966e.png" style="display: block; vertical-align: top; margin: 5px auto; cursor: pointer; position: relative; max-width: 100%;" fr-original-style="display: block; vertical-align: top; margin: 5px auto;" fr-original-class="fr-draggable"></a>
+							</div>
+							
+						</div>
+					
+						<div role="tabpanel" class="tab-pane" id="tab111396018">
+							<div class="section-table section-table-responsive">
+								<table border="0" cellpadding="0" cellspacing="0" dir="RTL" fr-original-style="width: 100%;" style="width: 100%; border: 0px; border-collapse: collapse; empty-cells: show; max-width: 100%;" width="1174"><tbody><tr fr-original-style="user-select: none;" style="user-select: none;"><td dir="RTL" fr-original-class="xl71" fr-original-style='color: black; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(247, 218, 100); height: 29.25pt; width: 27.9944%;' height="39" style='color: black; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(247, 218, 100); height: 29.25pt; width: 27.9944%; user-select: text; border: 1px solid rgb(221, 221, 221);' width="26.57580919931857%">عنوان<br></td><td dir="RTL" fr-original-class="xl71" fr-original-style='color: black; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(247, 218, 100); width: 43.7848%;' style='color: black; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(247, 218, 100); width: 43.7848%; user-select: text; border: 1px solid rgb(221, 221, 221);' width="48.38160136286201%">توضیحات<br></td><td dir="RTL" fr-original-class="xl71" fr-original-style='color: black; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(247, 218, 100); width: 12.9004%;' style='color: black; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(247, 218, 100); width: 12.9004%; user-select: text; border: 1px solid rgb(221, 221, 221);' width="12.010221465076661%">زمان شروع ثبت نام<br></td><td dir="RTL" fr-original-class="xl71" fr-original-style='color: black; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(247, 218, 100); width: 115pt;' style='color: black; font-size: 19px; font-family: "B Bardiya"; text-align: center; vertical-align: middle; background: rgb(247, 218, 100); width: 115pt; user-select: text; border: 1px solid rgb(221, 221, 221);' width="13.03236797274276%">زمان برگزاری<br></td></tr><tr fr-original-style="user-select: none;" style="user-select: none;"><td dir="RTL" fr-original-class="xl65" fr-original-style='color: black; font-size: 24px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(97, 189, 109); height: 56.25pt; width: 27.9944%;' height="75" style='color: black; font-size: 24px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(97, 189, 109); height: 56.25pt; width: 27.9944%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">&nbsp;المپیاد خلاقیت و تفکر طراحی آسیایی<br>(DrCT)</strong><br></td><td dir="RTL" fr-original-class="xl66" fr-original-style='color: rgb(51, 51, 51); font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: rgb(97, 189, 109); width: 43.7848%;' style='color: rgb(51, 51, 51); font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: rgb(97, 189, 109); width: 43.7848%; user-select: text; border: 1px solid rgb(221, 221, 221);'><div style="text-align: justify;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 18px;">شرکت در یکی از معتبرترین المپیاد دانش آموزی در آسیا و جهان در زمینه مباحث ببراس.</span></strong></div><div style="text-align: justify;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 18px;">ب</span></strong><span style="font-size: 18px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">ا بیش از سه سال تجربه موفق دربرگزاری و بیش از 600 شرکت کننده از ایران</strong>&nbsp;</span></div><div style="text-align: justify;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 18px;">همه دانش آموزان پایه <span style="color: rgb(184, 49, 47);">اول تا دوازدهم</span> میتونن خودشون رو در یک رقابت بین المللی معتبر محک بزنن.</span></strong></div></td><td dir="RTL" fr-original-class="xl72" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(97, 189, 109); width: 12.9004%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(97, 189, 109); width: 12.9004%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">دی ماه <br>(هر سال)</strong><br></td><td dir="RTL" fr-original-class="xl72" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(97, 189, 109); width: 15.1811%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(97, 189, 109); width: 15.1811%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">فروردین ماه <br>(هرسال)</strong><br></td></tr><tr><td fr-original-style="width: 27.9944%; background-color: rgb(26, 188, 156);" style="width: 27.9944%; background-color: rgb(26, 188, 156); user-select: text; border: 1px solid rgb(221, 221, 221);"><div style="text-align: center;"><strong><span style="font-size: 24px;">المپیاد دکتر سی تی فاینال<br></span></strong></div><div style="text-align: center;"><strong><span style="font-size: 24px;">(DrCT FINAL) </span></strong></div></td><td fr-original-style="width: 43.7326%; background-color: rgb(26, 188, 156);" style="width: 43.7326%; background-color: rgb(26, 188, 156); user-select: text; border: 1px solid rgb(221, 221, 221);"><div style="text-align: justify;"><strong><span style="font-size: 16px; font-family: Vazir;">شرکت در بزرگترین رقابت جهانی در <span style="color: rgb(184, 49, 47);">زمینه ببراس و تفکر طراحی</span> برای دانش اموزان پایه اول تا دوازدهم</span></strong></div><div style="text-align: justify;"><strong><span style="font-size: 16px; font-family: Vazir;">تمامی <span style="color: rgb(184, 49, 47);">مدال آوران طلا و نقره و برنز </span>مرحله اول جواز شرکت در این رقابت را &nbsp;دارند</span></strong></div></td><td fr-original-style="width: 12.9526%; background-color: rgb(26, 188, 156);" style="width: 12.9526%; background-color: rgb(26, 188, 156); user-select: text; border: 1px solid rgb(221, 221, 221);"><div style="text-align: center;"><span style="font-size: 18px;"><strong>مهر ماه</strong></span></div><div style="text-align: center;"><span style="font-size: 18px;"><strong>(هرسال)</strong></span></div></td><td fr-original-style="width: 15.1811%; background-color: rgb(26, 188, 156);" style="width: 15.1811%; background-color: rgb(26, 188, 156); user-select: text; border: 1px solid rgb(221, 221, 221);"><div style="text-align: center;"><strong><span style="font-size: 18px;">آذر ماه</span></strong></div><div style="text-align: center;"><strong><span style="font-size: 18px;">(هر سال)</span></strong></div></td></tr><tr fr-original-style="user-select: none;" style="user-select: none;"><td dir="RTL" fr-original-class="xl79" fr-original-style='color: black; font-size: 24px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(0, 168, 133); height: 70.2pt; width: 27.9944%;' height="92" style='color: black; font-size: 24px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(0, 168, 133); height: 70.2pt; width: 27.9944%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">المپیاد علوم کامپیوتر<br>(NM Data Science)</strong><br></td><td dir="RTL" fr-original-class="xl69" fr-original-style='color: rgb(51, 51, 51); font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: rgb(0, 168, 133); width: 43.7848%;' style='color: rgb(51, 51, 51); font-size: 16px; font-family: "B Nazanin"; text-align: right; vertical-align: middle; background: rgb(0, 168, 133); width: 43.7848%; user-select: text; border: 1px solid rgb(221, 221, 221);'><div style="text-align: justify;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 18px;">شرکت در این المپیاد جذاب برای همه دانش آموزان <span style="color: rgb(184, 49, 47);">پایه نهم تا دوازدهم آزاد</span> هست. </span></strong></div><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 18px;">تنها المپیاد بین المللی در زمینه علوم کامپیوتر در ایران.</span></strong><br><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 18px;">هر دانش آموزی می تونه به راحتی دراین رقابت بین المللی با اعتبار بالا شرکت کنه.</span>&nbsp;</strong><br></td><td dir="RTL" fr-original-class="xl70" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(0, 168, 133); width: 12.9004%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(0, 168, 133); width: 12.9004%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">شهریور ماه <br>(هر سال)</strong><br></td><td dir="RTL" fr-original-class="xl70" fr-original-style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(0, 168, 133); width: 15.1811%;' style='color: black; font-size: 19px; font-family: "B Nazanin"; text-align: center; vertical-align: middle; background: rgb(0, 168, 133); width: 15.1811%; user-select: text; border: 1px solid rgb(221, 221, 221);'><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">آبان ماه <br>(هرسال)</strong><br></td></tr></tbody></table><a href="http://erdos.ir/erdoscontests/competition" style="user-select: auto;"><img src="/themes/custom-0c4b/userfiles/877054.png" style="display: block; vertical-align: top; margin: 5px auto; cursor: pointer; position: relative; max-width: 100%;" fr-original-style="display: block; vertical-align: top; margin: 5px auto;" fr-original-class="fr-draggable"></a>
+							</div>
+							
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="latest-products-section bg-white py-100">
+		<div class="container">
+			<div class="section-title pb-80">
+				<h2 class="section-title-text">محصولات آموزشی</h2>
+			</div>
+			<div class="latest-products-items owl-carousel" options="{ items: 4, autoplay: true, autoplayTimeout: 4000, autoHeight: true, autoplayHoverPause: true, smartSpeed: 500, loop:true, rtl: true, responsive:{ 0:{ items: 1 }, 400:{items: 2}, 576: { items: 3 }, 992: { items: 4 } } }">
+				
+					<div class="latest-products-item d-flex flex-column m-10">
+						<div class="latest-products-item-thumbnail">
+							<a href="/b1-b2-2" target="">
+								<img src='/uploads/products/49281a.jpg?m=thumb&h=290&w=390&q=high'>
+							</a>
+						</div>
+						<div class="latest-products-item-title text-center py-15 px-20">
+							<a href="/b1-b2-2" class="latest-products-item-link">دوره زبان انگلیسی B1-B2</a>
+						</div>
+						<div class="latest-products-bottom py-15">
+							<div class="latest-products-item-description text-secondary text-center px-20">
+								وضعیت:
+								
+									موجود
+								
+								
+							</div>
+							<div class="latest-products-item-price text-center mt-10 px-20">
+								
+									<span class="latest-products-item-previous-price ml-10">
+										0 تومان
+									</span>
+								
+								<span class="latest-products-item-discounted-price">
+									1,100,000 تومان
+								</span>
+							</div>
+						</div>
+					</div>
+				
+					<div class="latest-products-item d-flex flex-column m-10">
+						<div class="latest-products-item-thumbnail">
+							<a href="/a1-a2-2" target="">
+								<img src='/uploads/products/9e6219.jpg?m=thumb&h=290&w=390&q=high'>
+							</a>
+						</div>
+						<div class="latest-products-item-title text-center py-15 px-20">
+							<a href="/a1-a2-2" class="latest-products-item-link">دوره زبان انگلیسی A1-A2</a>
+						</div>
+						<div class="latest-products-bottom py-15">
+							<div class="latest-products-item-description text-secondary text-center px-20">
+								وضعیت:
+								
+									موجود
+								
+								
+							</div>
+							<div class="latest-products-item-price text-center mt-10 px-20">
+								
+									<span class="latest-products-item-previous-price ml-10">
+										0 تومان
+									</span>
+								
+								<span class="latest-products-item-discounted-price">
+									980,000 تومان
+								</span>
+							</div>
+						</div>
+					</div>
+				
+					<div class="latest-products-item d-flex flex-column m-10">
+						<div class="latest-products-item-thumbnail">
+							<a href="/prea1-2" target="">
+								<img src='/uploads/products/5926cb.jpg?m=thumb&h=290&w=390&q=high'>
+							</a>
+						</div>
+						<div class="latest-products-item-title text-center py-15 px-20">
+							<a href="/prea1-2" class="latest-products-item-link">دوره زبان انگلیسی PREA1</a>
+						</div>
+						<div class="latest-products-bottom py-15">
+							<div class="latest-products-item-description text-secondary text-center px-20">
+								وضعیت:
+								
+									موجود
+								
+								
+							</div>
+							<div class="latest-products-item-price text-center mt-10 px-20">
+								
+									<span class="latest-products-item-previous-price ml-10">
+										0 تومان
+									</span>
+								
+								<span class="latest-products-item-discounted-price">
+									980,000 تومان
+								</span>
+							</div>
+						</div>
+					</div>
+				
+					<div class="latest-products-item d-flex flex-column m-10">
+						<div class="latest-products-item-thumbnail">
+							<a href="/t110" target="">
+								<img src='/uploads/products/94d1c2.png?m=thumb&h=290&w=390&q=high'>
+							</a>
+						</div>
+						<div class="latest-products-item-title text-center py-15 px-20">
+							<a href="/t110" class="latest-products-item-link">دوره استعداد تحلیلی ششم کد 110</a>
+						</div>
+						<div class="latest-products-bottom py-15">
+							<div class="latest-products-item-description text-secondary text-center px-20">
+								وضعیت:
+								
+									موجود
+								
+								
+							</div>
+							<div class="latest-products-item-price text-center mt-10 px-20">
+								
+									<span class="latest-products-item-previous-price ml-10">
+										0 تومان
+									</span>
+								
+								<span class="latest-products-item-discounted-price">
+									1,100,000 تومان
+								</span>
+							</div>
+						</div>
+					</div>
+				
+					<div class="latest-products-item d-flex flex-column m-10">
+						<div class="latest-products-item-thumbnail">
+							<a href="/t108" target="">
+								<img src='/uploads/products/df43f2.png?m=thumb&h=290&w=390&q=high'>
+							</a>
+						</div>
+						<div class="latest-products-item-title text-center py-15 px-20">
+							<a href="/t108" class="latest-products-item-link">دوره هوش ریاضی ششم کد 108</a>
+						</div>
+						<div class="latest-products-bottom py-15">
+							<div class="latest-products-item-description text-secondary text-center px-20">
+								وضعیت:
+								
+									موجود
+								
+								
+							</div>
+							<div class="latest-products-item-price text-center mt-10 px-20">
+								
+									<span class="latest-products-item-previous-price ml-10">
+										0 تومان
+									</span>
+								
+								<span class="latest-products-item-discounted-price">
+									1,100,000 تومان
+								</span>
+							</div>
+						</div>
+					</div>
+				
+					<div class="latest-products-item d-flex flex-column m-10">
+						<div class="latest-products-item-thumbnail">
+							<a href="/g107" target="">
+								<img src='/uploads/products/537276.png?m=thumb&h=290&w=390&q=high'>
+							</a>
+						</div>
+						<div class="latest-products-item-title text-center py-15 px-20">
+							<a href="/g107" class="latest-products-item-link">دوره هوش ریاضی پایه پنجم کد 107</a>
+						</div>
+						<div class="latest-products-bottom py-15">
+							<div class="latest-products-item-description text-secondary text-center px-20">
+								وضعیت:
+								
+									موجود
+								
+								
+							</div>
+							<div class="latest-products-item-price text-center mt-10 px-20">
+								
+									<span class="latest-products-item-previous-price ml-10">
+										0 تومان
+									</span>
+								
+								<span class="latest-products-item-discounted-price">
+									1,100,000 تومان
+								</span>
+							</div>
+						</div>
+					</div>
+				
+					<div class="latest-products-item d-flex flex-column m-10">
+						<div class="latest-products-item-thumbnail">
+							<a href="/product-95" target="">
+								<img src='/uploads/products/7f53e6.jpg?m=thumb&h=290&w=390&q=high'>
+							</a>
+						</div>
+						<div class="latest-products-item-title text-center py-15 px-20">
+							<a href="/product-95" class="latest-products-item-link">کتاب تفکر الگوریتمی</a>
+						</div>
+						<div class="latest-products-bottom py-15">
+							<div class="latest-products-item-description text-secondary text-center px-20">
+								وضعیت:
+								
+								
+									ناموجود
+								
+							</div>
+							<div class="latest-products-item-price text-center mt-10 px-20">
+								
+									<span class="latest-products-item-previous-price ml-10">
+										0 تومان
+									</span>
+								
+								<span class="latest-products-item-discounted-price">
+									320,000 تومان
+								</span>
+							</div>
+						</div>
+					</div>
+				
+					<div class="latest-products-item d-flex flex-column m-10">
+						<div class="latest-products-item-thumbnail">
+							<a href="/g9-10" target="">
+								<img src='/uploads/products/8e9504.jpg?m=thumb&h=290&w=390&q=high'>
+							</a>
+						</div>
+						<div class="latest-products-item-title text-center py-15 px-20">
+							<a href="/g9-10" class="latest-products-item-link">دوره علوم پیشرفته پایه 9 کد 124</a>
+						</div>
+						<div class="latest-products-bottom py-15">
+							<div class="latest-products-item-description text-secondary text-center px-20">
+								وضعیت:
+								
+									موجود
+								
+								
+							</div>
+							<div class="latest-products-item-price text-center mt-10 px-20">
+								
+									<span class="latest-products-item-previous-price ml-10">
+										0 تومان
+									</span>
+								
+								<span class="latest-products-item-discounted-price">
+									1,100,000 تومان
+								</span>
+							</div>
+						</div>
+					</div>
+				
+			</div>
+			
+		</div>
+	</div>
+
+
+
+	<div class="testimonials-section py-50">
+		<div class="container clearfix">
+			<div class="section-title pb-80">
+				<h2 class="section-title-text">اردوش به سوالات شما پاسخ می دهد؟</h2>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-10 mx-auto owl-container">
+					<a href="#" class="testimonials-section-owl-next owl-next">
+						<i class="fa fa-long-arrow-right testimonials-section-arrow"></i>
+					</a>
+					<a href="#" class="testimonials-section-owl-prev owl-prev">
+						<i class="fa fa-long-arrow-left testimonials-section-arrow"></i>
+					</a>
+
+					<div class="testimonials-section-owl mt-10 position-relative owl-carousel" options="{ items: 1, autoplay: true, autoplayTimeout: 4000, autoplayHoverPause: true, smartSpeed: 500, loop:true, rtl: true}">
+						
+							<div class="testimonials-section-item pr-10">
+								<div class="testimonials-section-image-container">
+									<img class="testimonials-section-image" src='/themes/custom-0c4b/userfiles/396bf3.jpg?m=crop&w=100&h=100&q=high' alt="1.شروع فعالیت موسسه اردوش:">
+								</div>
+								<div class="testimonials-section-ttl">
+									<h3 class="testimonials-section-item-title">
+										<i class="fa fa-quote-left testimonials-section-item-icon"></i>1.شروع فعالیت موسسه اردوش:</h3>
+								</div>
+								<div class="testimonials-section-quote">
+									<p><div style="text-align: justify;"><span style="font-family: Vazir;"><sup><span style="font-size: 16px;">موسسه نوآور اردوش, در سال 1395, با هدف خلق نوآوری های آموزشی در حیطه ریاضیات و علوم در مرکز نوآوری دانشگاه تبریز شروع به فعالیت کرد. این موسسه به همت آقای دکتر افشین بهمرام از اعضای هیئت علمی دانشکده ریاضی دانشگاه تبریز و سرپرست تیم المپیاد دانشجویی شمالغرب کشور تاسیس گردیده است.شروع فعالیت موسسه اردوش با برگزاری کلاس های حضوری عمومی و خصوصی در تهران و تبریز و همچنین برگزاری کارگاه های آموزشی کوتاه مدت برای مدارس تیزهوشان در کل کشور بوده است.<br><br></span></sup></span></div></p>
+								</div>
+								
+							</div>
+						
+							<div class="testimonials-section-item pr-10">
+								<div class="testimonials-section-image-container">
+									<img class="testimonials-section-image" src='/themes/custom-0c4b/userfiles/bb8542.jpg?m=crop&w=100&h=100&q=high' alt="2.لیست فعالیت های آموزشی موسسه اردوش ؟">
+								</div>
+								<div class="testimonials-section-ttl">
+									<h3 class="testimonials-section-item-title">
+										<i class="fa fa-quote-left testimonials-section-item-icon"></i>2.لیست فعالیت های آموزشی موسسه اردوش ؟</h3>
+								</div>
+								<div class="testimonials-section-quote">
+									<p><ol><li><span style="font-size: 16px; font-family: Vazir;">برگزاری کلاس های حضوری و آنلاین در سراسر کشور</span></li><li style="text-align: justify;"><span style="font-family: Vazir;"><span style="font-size: 16px;">طراحي و توليد وسايل آموزش رياضي </span></span></li><li style="text-align: justify;"><span style="font-family: Vazir;"><span style="font-size: 16px;">تالیف و ترجمه کتب آموزشی </span></span></li><li style="text-align: justify;"><span style="font-family: Vazir;"><span style="font-size: 16px;">برگزاری مسابقات داخلی و بین المللی به عنوان نماینده انحصاری کشور در سراسر ایران</span></span></li><li style="text-align: justify;"><span style="font-family: Vazir;"><span style="font-size: 16px;">برگزاری تورهای آموزشی داخلی و بین المللی </span></span></li><li style="text-align: justify;"><span style="font-family: Vazir;"><span style="font-size: 16px;">برگزاری کارگاه ها و همایش های داخلی و بین المللی </span></span></li><li style="text-align: justify;"><span style="font-size: 16px; font-family: Vazir;">ارایه خدمات مشاوره و استعدادیابی (جدید)</span></li></ol></p>
+								</div>
+								
+							</div>
+						
+							<div class="testimonials-section-item pr-10">
+								<div class="testimonials-section-image-container">
+									<img class="testimonials-section-image" src='/themes/custom-0c4b/userfiles/b5d6b8.jpg?m=crop&w=100&h=100&q=high' alt="3.چشم انداز و اهداف بلند مدت موسسه اردوش؟">
+								</div>
+								<div class="testimonials-section-ttl">
+									<h3 class="testimonials-section-item-title">
+										<i class="fa fa-quote-left testimonials-section-item-icon"></i>3.چشم انداز و اهداف بلند مدت موسسه اردوش؟</h3>
+								</div>
+								<div class="testimonials-section-quote">
+									<p><div style="text-align: justify;"><span style="font-size: 16px; font-family: Vazir;">چشم انداز اصلی موسسه, پرورش متخصصان جوانی است که توانایی ارایه دانش تلفیقی در حیطه ریاضیات و علوم, علوم کامپیوتر و زبان را داشته و بتوانند در زمینه های فوق به خلق ایده های نوآورانه&zwnj;ی نوین رشته ای بپردازند که نیاز جهان امروز است. در این راستا ارتقای سطح علمی دانش آموزان بر پایه تفکر خلاق و درک بهتر مفاهیم علمی در حیطه ریاضیات و علوم و ....... اولویت اصلی اردوش است.</span></div></p>
+								</div>
+								
+							</div>
+						
+							<div class="testimonials-section-item pr-10">
+								<div class="testimonials-section-image-container">
+									<img class="testimonials-section-image" src='/themes/custom-0c4b/userfiles/7acad3.jpg?m=crop&w=100&h=100&q=high' alt="4.تقویم آموزشی کلاسهای موسسه اردوش ؟">
+								</div>
+								<div class="testimonials-section-ttl">
+									<h3 class="testimonials-section-item-title">
+										<i class="fa fa-quote-left testimonials-section-item-icon"></i>4.تقویم آموزشی کلاسهای موسسه اردوش ؟</h3>
+								</div>
+								<div class="testimonials-section-quote">
+									<p><div style="text-align: justify;"><span style="font-family: Vazir; font-size: 16px;">کلاس های ترمیک موسسه اردوش چهار ترم را در بر میگیرد که در سه ترم اول<span style="color: rgb(184, 49, 47);"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">&nbsp;</strong></span></span><span style="font-family: Vazir; font-size: 20px;"><span style="color: rgb(0, 0, 0);"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">(ترم اول تابستان ,ترم دوم پاییز و ترم سوم زمستان</strong></span><span style="color: rgb(0, 0, 0);">)</span></span><span style="font-family: Vazir; font-size: 16px;">&nbsp;هر کدام یک سوم مباحث مدنظر ,تدریس می شود و ترم بهار جهت جمع بندی کلی دروس و حل مسائل بیشتر در نظر گرفته شده است.<br>مباحث تمامی کلاسها سطح پیشرفته و جهت آمادگی دانش اموزان برای شرکت در المپیاد های مختلف علمی است.</span></div></p>
+								</div>
+								
+							</div>
+						
+							<div class="testimonials-section-item pr-10">
+								<div class="testimonials-section-image-container">
+									<img class="testimonials-section-image" src='/themes/custom-0c4b/userfiles/34d121.jpg?m=crop&w=100&h=100&q=high' alt="5. کلاسهای ویژه دانش آموزان پایه ششم و آمادگی تیزهوشان ؟">
+								</div>
+								<div class="testimonials-section-ttl">
+									<h3 class="testimonials-section-item-title">
+										<i class="fa fa-quote-left testimonials-section-item-icon"></i>5. کلاسهای ویژه دانش آموزان پایه ششم و آمادگی تیزهوشان ؟</h3>
+								</div>
+								<div class="testimonials-section-quote">
+									<p><div style="text-align: justify;"><span style="font-family: Vazir;">اردوش از سال 97 همزمان با تغییر مواد آزمون تیزهوشان (براساس هوش ها) به برگزاری دوره های کامل آمادگی تیزهوشان همت گماشته و برای متقاضیان تیزهوشان برنامه&zwnj;ی ویژه دارد که شامل کلاسها , آزمون های شبیه ساز تیزهوشان و دوره های جمع بندی است.<br>آمار بالای قبولی در سالهای اخیر گواه کیفیت آموزشی ماست.</span></div></p>
+								</div>
+								
+							</div>
+						
+							<div class="testimonials-section-item pr-10">
+								<div class="testimonials-section-image-container">
+									<img class="testimonials-section-image" src='/themes/custom-0c4b/userfiles/c487f8.jpg?m=crop&w=100&h=100&q=high' alt="6.خدمات پشتیبانی کلاس‌ها ؟">
+								</div>
+								<div class="testimonials-section-ttl">
+									<h3 class="testimonials-section-item-title">
+										<i class="fa fa-quote-left testimonials-section-item-icon"></i>6.خدمات پشتیبانی کلاس‌ها ؟</h3>
+								</div>
+								<div class="testimonials-section-quote">
+									<p><div style="text-align: justify;">پشتیبان آموزشی موسسه در طول ترم نحوه، حضور در کلاس و انجام تکالیف دانش آموزان را رصد می&zwnj;کند. همچنین پل رابط میان دانش آموزان و مدیریت در مورد نحوه برگزاری کلاسها است. تمامی این خدمات <strong style="font-weight: 700;">بصورت رایگان</strong> انجام می&zwnj;گیرد.</div></p>
+								</div>
+								
+							</div>
+						
+							<div class="testimonials-section-item pr-10">
+								<div class="testimonials-section-image-container">
+									<img class="testimonials-section-image" src='/themes/custom-0c4b/userfiles/116fe1.jpg?m=crop&w=100&h=100&q=high' alt="7.هدف از برگزاری المپیاد های بین المللی توسط اردوش چیست؟">
+								</div>
+								<div class="testimonials-section-ttl">
+									<h3 class="testimonials-section-item-title">
+										<i class="fa fa-quote-left testimonials-section-item-icon"></i>7.هدف از برگزاری المپیاد های بین المللی توسط اردوش چیست؟</h3>
+								</div>
+								<div class="testimonials-section-quote">
+									<p><div style="text-align: justify;"><span style="font-family: Vazir;">جهان امروز نیازمند افرادی است که در گرایش های مختلف برای بدست آوردن شغل مناسب و حرفه ای در سطح جهانی رقابت کنند. در این حال باید با متخصصینی از کشورهای دیگر رقابت کنند و دانش خود را برای انتساب در شغل مورد نظر به اثبات برسانند. این کار نیازمند آن است که از دوران نوجوانی آماده شده و با سطح علمی دانش آموزان در دیگر کشور ها آشنا شوند و خود را ارزیابی نمایند. موسسه اردوش با برگزاری مسابقات معتبر جهانی این فرصت استثنایی را در اختیار دانش آموزان این مرز و بوم قرار داده است.</span></div></p>
+								</div>
+								
+							</div>
+						
+							<div class="testimonials-section-item pr-10">
+								<div class="testimonials-section-image-container">
+									<img class="testimonials-section-image" src='/themes/custom-0c4b/userfiles/fc60c1.jpg?m=crop&w=100&h=100&q=high' alt="ویژگی منحصر بفرد شرکت در المپیاد های بین المللی اردوش؟">
+								</div>
+								<div class="testimonials-section-ttl">
+									<h3 class="testimonials-section-item-title">
+										<i class="fa fa-quote-left testimonials-section-item-icon"></i>ویژگی منحصر بفرد شرکت در المپیاد های بین المللی اردوش؟</h3>
+								</div>
+								<div class="testimonials-section-quote">
+									<p><div style="text-align: justify;">بارزترین ویژگی المپیاد های &nbsp;SASMO &ndash;VANDA- DRCT ,.... &nbsp;در این است که مرحله اول این رقابت ها بصورت بین المللی است و برخلاف مسابقات رایج دیگر, نتایج داوطلبان در مرحله اول هم با همه ی داوطلبان در جهان مقایسه شده و رتبه های آنها بصورت جهانی از سایت رسمی مسابقات اعلام می شود. &nbsp;بسیاری از دانش آموران <span style="color: rgb(0, 0, 0); font-size: 18px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">به اشتباه کلمه المپیاد را مساوی با مسابقه</strong></span> می دانند اما حقیقت این است که شرکت در المپیاد از لحاظ اعتبار و &nbsp;کیفیت رقابت با شرکت در مسابقه قابل قیاس نیست. &nbsp;بسیاری از مسابقات بین المللی تنها جهت آشنایی دانش آموزان با مفاهیم جهانی و ارتباط با دانش آموزان کشور های دیگر برگزار می شود و از لحاظ علمی نمی تواند رزومه قوی جهت ارایه به محافل علمی دنیا باشد. بسیاری از موسسات غیر معتبر با استفاده از همین درک اشتباه کلمات , سواستفادههای زیادی را از والدین و دانش آموزان انجام دادند.&nbsp;</div></p>
+								</div>
+								
+							</div>
+						
+							<div class="testimonials-section-item pr-10">
+								<div class="testimonials-section-image-container">
+									<img class="testimonials-section-image" src='/themes/custom-0c4b/userfiles/ca3391.jpg?m=crop&w=100&h=100&q=high' alt="8.همکاران موسسه اردوش در شهرهای مختلف؟">
+								</div>
+								<div class="testimonials-section-ttl">
+									<h3 class="testimonials-section-item-title">
+										<i class="fa fa-quote-left testimonials-section-item-icon"></i>8.همکاران موسسه اردوش در شهرهای مختلف؟</h3>
+								</div>
+								<div class="testimonials-section-quote">
+									<p><div style="text-align: justify;"><span style="font-family: Vazir;">خوشبختانه در دو سال اخیر موسسات و آموزشگاه های مختلف از سراسر کشور تفاهم نامه هایی را جهت <span style="color: rgb(0, 0, 0); font-size: 18px;"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">ب</strong><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">ر</strong><strong fr-original-style="font-weight: 700;" style="font-weight: 700;">گزاری مسابقات مختلف</strong></span> با موسسه اردوش تنظیم کرده اند و در حال حاضر اردوش در اکثر مراکز استانها دارای نمایندگی فعال می باشد.</span></div><span style="font-family: Vazir;">لازم به ذکر است ثبت نام وبرگزاری کلاس های آنلاین ویژه آمادگی المپیاد ها , تنها از طریق &nbsp;سایت رسمی موسسه اردوش به آدرس <span style="color: rgb(0, 0, 0);"><strong fr-original-style="font-weight: 700;" style="font-weight: 700;"><span style="font-size: 18px;">Erdosonline.ir</span></strong></span>&nbsp; صورت می گیرد.</span></p>
+								</div>
+								
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="contact-with-us py-50">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-md-12 col-sm-12">
+					<h3 class="contact-with-us-title">همین حالا با ما در ارتباط باش:</h3>
+				</div>
+				<div class="col-lg-5 col-md-12 col-sm-12">
+					<div class="contact-with-us-info text-left">
+						041-33352001 - 09010446169 - 09030767438 - 09363069089 - 09029377438
+						<br>erdoseducenter@gmail.com
+					</div>
+				</div>
+			</div>
+			
+
+		</div>
+	</div>
+
+
+
+	<div class="blog-section bg-white py-100">
+		<div class="container">
+
+			<div class="section-title pb-100">
+				<h2 class="section-title-text">آخرین اخبار و اطلاعیه ها</h2>
+			</div>
+			<div class="row">
+				
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<div class="blog-section-item er-margin-lg-bottom">
+							<div class="blog-section-item-image-container">
+								<img class="blog-section-item-image" src='/uploads/posts/112c01.png?m=crop&w=400&h=300&q=high' alt="سوالات متداول درباره موسسه اردوش">
+								<div class="blog-section-item-overlay">
+									<a href="/news-faq">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+							</div>
+							<div class="blog-section-item-time">
+								<span>08 آذر 1400</span>
+							</div>
+							<div class="blog-section-item-details">
+								<h3 class="blog-section-item-title">
+									<a href="/news-faq" class="blog-section-item-link">سوالات متداول درباره موسسه اردوش</a>
+								</h3>
+								<p class="blog-section-item-description">ليست کامل خدمات و فعاليت هاي موسسه اردوش و پاسخ به تمامي سوالات شما در اين قسمت قابل مشاهده است.</p>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<div class="blog-section-item er-margin-lg-bottom">
+							<div class="blog-section-item-image-container">
+								<img class="blog-section-item-image" src='/uploads/posts/0e57ec.png?m=crop&w=400&h=300&q=high' alt="معرفی المپیاد های بین المللی اردوش">
+								<div class="blog-section-item-overlay">
+									<a href="/news-olympiads">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+							</div>
+							<div class="blog-section-item-time">
+								<span>15 شهریور 1400</span>
+							</div>
+							<div class="blog-section-item-details">
+								<h3 class="blog-section-item-title">
+									<a href="/news-olympiads" class="blog-section-item-link">معرفی المپیاد های بین المللی اردوش</a>
+								</h3>
+								<p class="blog-section-item-description">در اينجا مي توانيد ليست کامل مسابقات بين المللي را که موسسه اردوش برگزار مي کند را مشاهده بفرماييد.</p>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<div class="blog-section-item er-margin-lg-bottom">
+							<div class="blog-section-item-image-container">
+								<img class="blog-section-item-image" src='/uploads/posts/5d0391.jpg?m=crop&w=400&h=300&q=high' alt="تقويم برگزاري المپياد هاي اردوش">
+								<div class="blog-section-item-overlay">
+									<a href="/news-workshops">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+							</div>
+							<div class="blog-section-item-time">
+								<span>15 شهریور 1400</span>
+							</div>
+							<div class="blog-section-item-details">
+								<h3 class="blog-section-item-title">
+									<a href="/news-workshops" class="blog-section-item-link">تقويم برگزاري المپياد هاي اردوش</a>
+								</h3>
+								<p class="blog-section-item-description">تقويم مسابقات به شما کمک ميکنه که از زمان ثبت نام و برگزاري المپياد هاي موسسه اردوش باخبر شويد در در زمان مناسب بتوانيد نسبت به ثبت نام اقدام فرماييد.</p>
+							</div>
+						</div>
+					</div>
+				
+			</div>
+			
+
+		</div>
+	</div>
+
+
+
+<footer class="mt-sm-50">
+	
+		<div class="footer-contact">
+			<div class="container clearfix">
+				<div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center align-items-lg-none">
+					
+					
+						<div class="footer-contact-item site-footer-address">
+							تبریز، خیابان گلگشت، پارک علم و فناوری آذربایجان شرقی - ساختمان شهریار واحد 2419
+						</div>
+					
+					<div class="footer-actions d-flex flex-column flex-sm-row-reverse justify-content-center justify-content-lg-none align-items-center">
+						<div class="footer-contact-item site-footer-social py-10 py-sm-auto">
+							
+								<a class="facebook site-footer-social-link" href="https://facebook.com/test">
+									<i class="fa fa-facebook site-footer-social-icon"></i>
+								</a>
+							
+							
+							
+								<a class="telegram site-footer-social-link" href="https://telegram.me/erdosh">
+									<i class="fa fa-send site-footer-social-icon"></i>
+								</a>
+							
+							
+								<a class="instagram site-footer-social-link" href="https://instagram.com/erdos_math">
+									<i class="fa fa-instagram site-footer-social-icon"></i>
+								</a>
+							
+							
+						</div>
+						
+							<div class="footer-contact-item site-footer-phone d-none-sm d-none-xs mr-0 mr-sm-20">
+								<i class="fa fa-phone"></i>
+								09363069089 -  09010446169 - 09030767438 -09029377438
+							</div>
+						
+						
+							<div class="footer-contact-item site-footer-email d-none-sm d-none-xs mr-0 mr-lg-25">
+								<i class="fa fa-envelope"></i>
+								info@erdos.ir
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+
+	
+		<div class="site-copyright">
+			<div class="container">
+				<p class="site-copyright-text d-inline-block">ساخت سایت توسط <a href="https://www.portal.ir/" target="_blank">پرتال</a></p>
+			</div>
+		</div>
+	
+</footer>
+
+<!--/quickview-->
+<!--quickview-->
+<form name="quickview" id="product-quickview-modal" class="modal modal-md product-quickview-modal" ng-submit="quickview.$valid && submit()" tabindex="-1" role="dialog" quick-view="" dynamic-form="" novalidate="">
+    <div class="modal-dialog product-quickview-modal-dialog" role="document">
+        <div class="modal-content product-quickview-modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title product-quickview-modal-title">
+                    <span ng-bind="title"></span>
+                </h5>
+                <button type="button" class="close product-quickview-modal-close-icon" data-dismiss="modal">
+                    <span aria-hidden="true">
+                        &times;
+                    </span>
+                </button>
+            </div>
+            <div class="modal-body product-quickview-modal-body">
+                
+                    <div class="alert alert-danger validation-summary product-quickview-modal-failed m-0 mb-3" ng-if="validation" ng-class="{'d-block' : validation}">
+                        <h6 class="alert-heading validation-summary-title product-quickview-modal-failed-title">
+                            <span ng-bind="validation.main"></span>
+                        </h6>
+                    </div>
+                
+                <div class="alert alert-success product-quickview-modal-succeed mb-0" ng-show="succeed">
+                    <span ng-bind="succeed.description"></span>
+                </div>
+                <div ng-show="loading">
+                    در حال بارگذاری...
+                </div>
+                <div ng-hide="succeed || loading">
+                    <div class="form-group product-quickview-modal-attribute" ng-repeat="attribute in attributes">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    {{attribute.name}}
+                                </span>
+                            </div>
+                            <select id="product-quickview-modal-attribute-{{$index}}" name="attribute{{$index}}" class="form-control product-quickview-modal-attribute-control" ng-model="model.attributes['attribute' + $index]" ng-change="changeAttribute()" ng-disabled="progress" required="">
+                                <option ng-repeat="value in attribute.values" value="{{attribute.name}}: {{value}}">
+                                    {{value}}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="validation-inline product-quickview-modal-inline-error text-danger" ng-messages="quickview['attribute' + $index].$error" ng-show="quickview.$submitted || quickview['attribute' + $index].$dirty">
+                            <span ng-message="required">
+                                {{attribute.name}} را انتخاب کنید.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group product-quickview-modal-quantity">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    تعداد
+                                </span>
+                            </div>
+                            <input type="number" id="product-quickview-modal-quantity" name="quantity" class="form-control product-quickview-modal-quantity-control" ng-model="model.quantity" ng-disabled="progress" dir="ltr" min="1" max="1000000000" required="">
+                        </div>
+                        <div class="validation-inline product-quickview-modal-inline-error text-danger" ng-messages="quickview.quantity.$error" ng-show="quickview.$submitted || quickview.quantity.$dirty">
+                            <span ng-message="required">
+                                تعداد را بنویسید.
+                            </span>
+                            <span ng-message="min">
+                                تعداد را بیش‌تر از 0 بنویسید.
+                            </span>
+                            <span ng-message="max">
+                                تعداد را کم‌تر از 10000000000 بنویسید.
+                            </span>
+                        </div>
+                    </div>
+                    <span class="product-quickview-modal-compare-price text-muted" ng-show="getComparePrice()">
+                        <del>{{getComparePrice() | number}}</del>
+                    </span>
+                    <span class="product-quickview-modal-price text-green" ng-show="getPrice()">
+                        {{getPrice() | number}} تومان
+                    </span>
+                </div>
+            </div>
+            <div class="modal-footer" ng-hide="succeed || loading">
+                <button type="button" class="btn btn-link product-quickview-modal-close" ng-disabled="progress" data-dismiss="modal">
+                    انصراف
+                </button>
+                <button class="btn btn-success product-quickview-modal-submit" ng-disabled="progress">
+                    افزودن به سبد خرید
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+<!--/quickview-->
+<!--/quickview-->
+
+<script type="text/javascript" src="/themes/custom-0c4b/js/bootstrap.js"></script>
+<script type="text/javascript" src="/themes/custom-0c4b/js/magnific.popup.js"></script>
+<script type="text/javascript" src="/themes/custom-0c4b/js/owl.carousel.js"></script>
+<script type="text/javascript" src="/themes/custom-0c4b/js/cedarmaps.js"></script>
+<script type="text/javascript" src="/themes/custom-0c4b/js/app.js"></script>
+<script src="/themes/custom-0c4b/js/custom.js?v=16" type="text/javascript"></script>
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-DEMGYDFHV5" async=""></script>
+<script type="text/javascript">
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+	gtag('config', 'G-DEMGYDFHV5');
+</script>
+
+
+</body></html>
